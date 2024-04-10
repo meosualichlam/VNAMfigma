@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Đăng nhập </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/img/logo.jpeg">
+        <link rel="stylesheet" type="text/css" href="/css/dangnhap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+
+    <body>
+        <div class="khungto">
+        <form action="" id="form-dangnhap"> 
+            <div class="logo">
+                <img src="/img/logo.jpeg" width="90px"; height="auto";>
+            </div>
+
+            <div class="tentruong" style="color: #000; font-family: Plus Jakarta Sans; font-size: 22px;
+                font-style: normal; font-weight: 700; line-height: normal;">
+                VNAM-eSTUDENT
+            </div>
+
+            <div class="hoten">
+                    <p>
+                        Họ và tên <span style="color: red;">*</span>
+                    </p>
+            </div>
+            <div class="nhapcaicon">
+                <i class="fas fa-user" style="margin-left: 9px; margin-top: 9px;"></i>
+                <input type="text" class="nhap" title="Vui lòng nhập họ và tên" placeholder="Họ và tên" name="txtTaiKhoan" id="txtTaiKhoan" required>
+            </div>
+            <div class="vidu">
+                <p>
+                    Ví dụ: Nguyễn Văn A
+                </p>
+            </div>
+
+            <div class="ngaysinh">
+                <p>
+                    Ngày sinh <span style="color: red;">*</span>
+                </p>
+            </div>
+            <div class="nhapcaicon">
+                <i class="fas fa-key" style="margin-left: 9px; margin-top: 9px;"></i>
+                <input type="number" class="nhap" title="Vui lòng nhập ngày sinh" 
+                placeholder="DDMMYYYY" name="txtNgaySinh" id="txtNgaySinh" required max="99999999">
+            </div>
+            <div class="vidu">
+                <p>
+                    Ví dụ: 27032004
+                </p>
+            </div>
+
+            <div class="ghinho">
+                <input type="checkbox">
+                Remember username
+            </div>
+
+            <div class="hotline">
+                <p>
+                    Hotline: 02438517093 - 0936176358 - 0912065168 
+                </p>
+            </div>    
+            
+            <div class="dangnhap">
+                <input type="submit" class="dangnhap1" value="Đăng nhập" onclick="ValidateUser()">
+            </div>
+        </form>
+        </div>
+    </body>
+</html>

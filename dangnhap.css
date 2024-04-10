@@ -1,0 +1,93 @@
+body{
+    background-color: #C1C1C1;
+}
+
+.khungto{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+
+#form-dangnhap{
+    max-width: 400px;
+    background: rgb(255, 255, 255);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+}
+.logo{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tentruong{
+    text-align: center;
+}
+.hoten{
+    margin-top: 60px;
+}
+
+.nhap{
+    border: 0;
+    outline: 0;
+    background:transparent;
+    font-size: 16px;
+    width: 340px;
+    hover:
+}
+
+.nhapcaicon:hover{
+    border: solid 1.5px;
+    border-color: #016AB4;
+
+}
+
+
+
+.nhapcaicon{
+    max-width: 400px;
+    height: 34px;
+    width: 380px;
+    border: solid 1.5px;
+    border-color: rgba(192, 186, 186, 0.5);
+    border-radius: 5px;
+    margin-top: -10px;
+}
+
+.vidu{
+    font-size: small;
+    margin-top: -6px;
+}
+
+.ghinho{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.hotline{
+    text-align: center;
+    font-size: 13px;
+}
+
+.dangnhap{
+    text-align: center;
+}
+.dangnhap1{
+    text-align: center;
+    background-color: #016AB4;
+    border-radius: 12px;
+    border: 1px solid #000;
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+    font-family: "Plus Jakarta Sans";
+    color: #FFF;
+}
+
+.dangnhap1:hover{
+    font-size: 22px;
+}

@@ -134,7 +134,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   height: 504px;
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
 /* .anh-nen-icon {
   background-position: center;
@@ -150,10 +150,9 @@ body::-webkit-scrollbar {
   overflow-x: hidden;
 } */
 .anh-nen-icon {
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: contain;
   height: 100%;
   position: absolute;
   top: 0;
@@ -162,16 +161,18 @@ body::-webkit-scrollbar {
   z-index: 1;
   width: 100%; 
   height: 100%; 
+  /* margin: 0;
+  padding: 0; */
 }
 
 .error-handler {
-  top: 515px;
-  border-radius: 0px;
+  top: 450px;
+  border-radius: 10px;
   background: linear-gradient(180deg, rgba(0, 42, 72, 0), #002a48 20%, #0a5d97);
-  width: 100vw;
-  height: 73px;
+  width: 100%;
+  height: 70px;
   mix-blend-mode: normal;
-  z-index: 4;
+  z-index: 5;
 }
 .trang-ch-child {
   position: absolute;
@@ -212,23 +213,21 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 .timer-trigger {
-  position: absolute;
-  top: 3014px;
-  left: 64px;
+  position: relative;
+  /* top: 3014px;
+  left: 64px; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  height: 173px;
   gap: 42px;
 }
 .hbtoyota-1-icon {
-  position: absolute;
-  top: 1033px;
-  left: 770px;
+  position: relative;
   width: 115px;
   height: 81px;
   object-fit: cover;
-  z-index: 1;
 }
 .solarletter-outline-icon {
   width: 24px;
@@ -682,10 +681,13 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
   gap: var(--gap-4xs);
   font-size: var(--font-size-xl);
+
 }
 .fork-join {
-  gap: var(--gap-smi);
+  gap: var(--gap-smi); 
+  height: 288px;
 }
+/* co 1 cai gap giua fork - join va table -row */
 .horizontal-layout-icon {
   width: 528.5px;
   height: 1px;
@@ -761,12 +763,13 @@ body::-webkit-scrollbar {
   max-width: 100%;
 }
 .table-row {
-  justify-content: flex-start;
+  justify-content: flex-end;
   padding: 0 var(--padding-xl) 0 0;
   box-sizing: border-box;
   gap: var(--gap-5xs);
   font-size: var(--font-size-xl);
   color: var(--color-black);
+  height: 166px;
 }
 .prioritizer,
 .switcher,
@@ -1001,17 +1004,22 @@ body::-webkit-scrollbar {
   debug_commit: f6aba90;
 }
 .frame-parent23 {
-  width: 1274px;
+  /* width: 1274px; */
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0px;
   overflow-x: auto;
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 0 var(--padding-45xl);
+  justify-content: center;
+  /* padding: 0 0 var(--padding-45xl); */
   box-sizing: border-box;
   gap: var(--gap-21xl);
   max-width: calc(100% - 156px);
+
 }
 .frame-parent23::-webkit-scrollbar {
   display: none;
@@ -1055,12 +1063,14 @@ body::-webkit-scrollbar {
   max-width: 100%;
   width: 100%;
   height: 100%;
+  justify-content: center;
 }
 /* gạch chân dưới Tin tức */
 .frame-child63 {
-  position: absolute;
+  position: relative;
+  align-self: center;
   top: 0;
-  left: 644px;
+  left: 0;
   width: 221.5px;
   height: 4px;
   z-index: 1;
@@ -1100,7 +1110,6 @@ body::-webkit-scrollbar {
   border: 3px solid var(--color-darkslategray);
   padding: var(--padding-smi) 45px var(--padding-base) var(--padding-31xl);
   background-color: var(--color-white);
-  position: absolute;
   top: 389px;
   left: 600px;
   border-radius: var(--br-7xl);
@@ -1113,6 +1122,9 @@ body::-webkit-scrollbar {
   white-space: nowrap;
   z-index: 1;
   align-self: center;
+  position: relative;
+  left: 0;
+  margin: auto;
 }
 .frame-button:hover {
   background-color: #e6e6e6;
@@ -1322,7 +1334,10 @@ body::-webkit-scrollbar {
   min-width: 88px;
 }
 .n-v8 {
-  right: -20px;
+  align-self: flex-start;
+  right: -5px;
+  width: 65px;
+  margin-right: 0px;
 }
 
 .n-v8,
@@ -1330,12 +1345,12 @@ body::-webkit-scrollbar {
   min-width: 59px;
 }
 .v-chng-ti8 {
-  position: absolute;
+  position: relative;
   margin: 0 !important;
   top: 0;
-  right: 40px;
+  right: -2px;
   line-height: 25.6px;
-  min-width: 119px;
+  min-width: 120px;
 }
 .cu-chuyn2,
 .frame-parent24,
@@ -1353,7 +1368,15 @@ body::-webkit-scrollbar {
   gap: var(--gap-34xl);
   z-index: 1;
   font-size: var(--font-size-xl);
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  /* padding-right: 0px;
+  margin-right: 0px; */
 }
+.tiu-18 a {
+  overflow: auto ;
+}
+
 .cu-chuyn2,
 .frame-parent24 {
   align-items: flex-end;
@@ -1362,7 +1385,7 @@ body::-webkit-scrollbar {
 .frame-parent24 {
   width: 1295px;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   gap: var(--gap-10xs);
 }
 .cu-chuyn2 {
@@ -1373,20 +1396,27 @@ body::-webkit-scrollbar {
   position: relative;
   gap: var(--gap-28xl);
   z-index: 3;
+  /* thêm wrap */
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .shape-container-child {
-  width: 100vw;
-  /* width: auto; */
+  align-self: center;
+  justify-content: center;
+  width: 100% ;
   height: 100%;
   position: absolute;
-  margin: 0 !important;
+  /* margin: 0 !important; */
+  padding: 0 30px !important;
   top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
   background-color: var(--color-gray-300);
   z-index: 2;
   overflow-x: hidden;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position-x: 50% ;
 }
 .hc-vin-m2 {
   margin: 0;
@@ -1401,12 +1431,13 @@ body::-webkit-scrollbar {
   z-index: 3;
 }
 .color-modifier {
-  align-self: stretch;
+  align-self: center;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 var(--padding-29xl) 0 var(--padding-31xl);
+  z-index: 3;
 }
 .gp-phn-xy,
 .hc-vin-m3,
@@ -1429,6 +1460,7 @@ body::-webkit-scrollbar {
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-smi);
+  z-index: 2;
 }
 .frame-child66 {
   height: 59px;
@@ -1442,15 +1474,17 @@ body::-webkit-scrollbar {
   display: inline-block;
 }
 .khm-ph {
+  text-decoration: none;
+  color:#000;
   font-weight: 800;
 }
+
 .span {
   font-weight: 300;
 }
 .khm-ph-container {
   height: 25px;
   position: relative;
-  display: :;
   /* white-space: pre-wrap; */
   justify-content: space-between;
   display: inline-block;
@@ -1479,6 +1513,7 @@ body::-webkit-scrollbar {
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-plus-jakarta-sans);
+  align-self: center;
 }
 .cu-chuyn-group,
 .shape-container1 {
@@ -1490,7 +1525,7 @@ body::-webkit-scrollbar {
 }
 .shape-container1 {
   align-self: stretch;
-  padding: 178px 96px var(--padding-63xl) 176px;
+  padding: 178px 140px var(--padding-63xl) 140px;
   box-sizing: border-box;
   position: relative;
   gap: 23px;
@@ -1513,11 +1548,17 @@ body::-webkit-scrollbar {
 }
 .hoinghi-1-icon {
   position: absolute;
-  top: 2543px;
+  width: 1249px;
+  height: 416px;
+  z-index: 0;
+  align-self: center;
+  top: 0;
+  left: 0;
+  /* top: 2543px;
   left: 67px;
   width: 1309px;
-  height: 417px;
-  object-fit: cover;
+  height: 417px; */
+  /* object-fit: cover; */
 }
 .kt-ni-vnam {
   margin: 0;
@@ -1569,25 +1610,25 @@ body::-webkit-scrollbar {
 .qun-l-in {
   margin: 0;
   position: relative;
-  font-size: inherit;
+  font-size: 32px;
   font-weight: 700;
   font-family: inherit;
   z-index: 1;
 }
 .shape-properties-icon {
-  height: 154.5px;
-  width: 150px;
+  height: 152px;
+  width: 131px;
   position: relative;
   z-index: 1;
 }
 .geometry-properties {
   align-self: stretch;
-  height: 154.5px;
+  height: 152px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 56px 0 55px;
+  padding: 0 55px 0 55px;
   box-sizing: border-box;
 }
 .path-elements,
@@ -1620,7 +1661,7 @@ body::-webkit-scrollbar {
 }
 .th-in-t {
   margin: 0;
-  font-size: inherit;
+  font-size: 32px;
   font-weight: 700;
   font-family: inherit;
 }
@@ -1656,6 +1697,8 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
   gap: var(--gap-31xl);
   min-width: 296px;
+  padding: 67px;
+  padding-top: 50px;
 }
 .path-elements-inner {
   width: 395px;
@@ -1670,7 +1713,7 @@ body::-webkit-scrollbar {
 }
 .hc-b-in {
   margin: 0;
-  font-size: inherit;
+  font-size: 32px;
   font-weight: 700;
   font-family: inherit;
 }
@@ -1718,6 +1761,10 @@ body::-webkit-scrollbar {
   align-items: flex-start;
   max-width: 100%;
 }
+.stroke-colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .stroke-controller {
   flex: 1;
   flex-direction: column;
@@ -1730,6 +1777,8 @@ body::-webkit-scrollbar {
   justify-content: flex-end;
   padding: 0 var(--padding-8xs) 87px var(--padding-10xs);
   box-sizing: border-box;
+  padding-bottom: 30px;
+  /* align-items: center; */
 }
 .fill-effects {
   width: 100%;
@@ -1794,7 +1843,6 @@ body::-webkit-scrollbar {
   z-index: 3; */
   height: 25px;
   position: relative;
-  display: :;
   /* white-space: pre-wrap; */
   justify-content: space-between;
   display: inline-block;
@@ -1831,6 +1879,7 @@ body::-webkit-scrollbar {
   color: var(--color-white);
   font-family: var(--font-roboto);
   height: 416px;
+  
 }
 .qung-co {
   width: 107px;
@@ -1838,22 +1887,30 @@ body::-webkit-scrollbar {
   display: inline-block;
   min-width: 107px;
   z-index: 1;
-  bottom: -3px;
+  /* bottom: -3px; */
 }
 .fill-operations {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-self: center ;
   padding: 0 var(--padding-8xs);
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-black);
+  max-height: 190px;
+  /* padding-bottom: 10px; */
+}
+.timer-trigger {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .path-creator {
-  position: absolute;
-  top: 1947px;
-  left: 67px;
+  position: relative;
+  top: 1800px;
+  /* left: auto; 
+  right: auto; */
   width: 1309px;
   display: flex;
   flex-direction: column;
@@ -1861,6 +1918,8 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
   gap: 33px;
   max-width: 100%;
+  padding: 20px 30px;
+  margin: auto;
   text-align: left;
   font-size: var(--font-size-29xl);
   color: var(--color-darkslategray);
@@ -1874,7 +1933,8 @@ body::-webkit-scrollbar {
   overflow-y: auto;
   letter-spacing: normal;
 }
-@media screen and (max-width: 1350px) {
+/* @media screen and (max-width: 1350px) { */
+  @media only screen and (max-width: 1000px) and (min-width: 600px) {
   .timer-trigger {
     flex-wrap: wrap;
   }
@@ -1961,7 +2021,7 @@ body::-webkit-scrollbar {
     font-size: var(--font-size-32xl);
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
   .bn-quyn-thuc-container {
     font-size: var(--font-size-base);
   }
@@ -2043,9 +2103,60 @@ body::-webkit-scrollbar {
     font-size: var(--font-size-base);
   }
 }
+/* bổ sung phần transformer */
+.transformer, .reducer {
+ padding: 10px;
+} 
+.mapper {
+  align-self: center;
+  padding: 20px;
+  padding-top: 0;
+}
+.reducer {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr; 
+  column-gap: 50px;
+}
+.trang-ch8 {
+  padding: 0 30px;
+}
+.icon-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
+@media only screen and (min-width: 1001px) {
+  .cu-chuyn2{
+    flex-wrap: wrap;
+    order: 0;
+  }
+  /* .shape-container1{
+    flex-wrap: wrap;
+  } */
+}
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+
+  article img {
+      width: 240px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      float: left;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .tiu-18{
+    flex-direction: column;
+    order: 1;
+  }
+}
 .tiu-18 div a:hover{
   background: #ebebeb;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 .tiu-18 div a:active{
   text-decoration: none;
@@ -2053,59 +2164,63 @@ body::-webkit-scrollbar {
   z-index: 1000;
 }
 
-.tiu-18 div a:hover .mega-box1{
+.tiu-18 div:hover .mega-box1{
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+.tiu-18 div:hover .mega-box2{
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+}
+.tiu-18 div:hover .mega-box3{
   opacity: 1;
   visibility: visible;
 }
-.tiu-18 div a:hover .mega-box2{
+.tiu-18 div:hover .mega-box4{
   opacity: 1;
   visibility: visible;
 }
-.tiu-18 div a:hover .mega-box3{
+.tiu-18 div:hover .mega-box5{
   opacity: 1;
   visibility: visible;
 }
-.tiu-18 div a:hover .mega-box4{
+.tiu-18 div:hover .mega-box6{
   opacity: 1;
   visibility: visible;
 }
-.tiu-18 div a:hover .mega-box5{
-  opacity: 1;
-  visibility: visible;
-}
-.tiu-18 div a:hover .mega-box6{
-  opacity: 1;
-  visibility: visible;
-}
-.tiu-18 div a:hover .mega-box7{
+.tiu-18 div:hover .mega-box7{
   opacity: 1;
   visibility: visible;
 }
 .mega-box1{
   display: block;
   position: absolute;
-  top: 150px;
-  width: 400px; 
-  left: 633px;
+  top: 50px;
+  width: 200px; 
+  left: 5px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 999;
+  z-index: 6;
 }
 .mega-box1 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 20px;
   display: flex;
   width: 850px;
-  justify-content:center;
+  justify-content: space-evenly;
+  /* đang ở đây */
   z-index: 1000;
 }
 .mega-box2{
+  display: block;
   position: absolute;
-  top: 150px;
-  width: 1190px; 
-  left: 710px;
+  top: 50px;
+  width: 200px; 
+  left: 5px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2116,13 +2231,18 @@ body::-webkit-scrollbar {
   /* padding: 5px 25px; */
   display: flex;
   width: 850px;
-  justify-content:center;
+  justify-content: space-evenly;
 }
 .mega-box3{
-  position: absolute;
+  /* position: absolute;
   top: 150px;
   width: 1190px; 
-  left: 890px;
+  left: 890px; */
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 200px; 
+  left: 5px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2133,13 +2253,15 @@ body::-webkit-scrollbar {
   /* padding: 5px 25px; */
   display: flex;
   width: 850px;
-  justify-content:center;
+  justify-content: space-evenly;
 }
 .mega-box4{
+  display: block;
   position: absolute;
-  top: 150px;
-  width: 1190px; 
-  left: 1095px;
+  top: 50px;
+  width: 200px; 
+  right: 0 ;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2150,13 +2272,19 @@ body::-webkit-scrollbar {
   /* padding: 5px 25px; */
   display: flex;
   width: 850px;
-  justify-content:center;
+  justify-content: space-evenly;
 }
 .mega-box5{
-  position: absolute;
-  top: 150px;
+  /* position: absolute;
+  top: 50px;
   width: 1190px; 
-  right: 78px;
+  right: 30px; */
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 200px; 
+  right: 0 ;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2235,3 +2363,5 @@ body::-webkit-scrollbar {
   opacity: 1;
   visibility: visible;
 } */
+  
+
