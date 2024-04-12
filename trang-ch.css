@@ -127,53 +127,7 @@ body::-webkit-scrollbar {
   color: var(--color-white);
   font-family: var(--font-plus-jakarta-sans);
 }
-.anh-nen-icon,
-.error-handler {
-  position: absolute;
-  top: 107px;
-  left: 0;
-  width: 100%;
-  height: 504px;
-  /* margin: 0 !important; */
-}
-/* .anh-nen-icon {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  overflow-x: hidden;
-} */
-.anh-nen-icon {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  width: 100%; 
-  height: 100%; 
-  /* margin: 0;
-  padding: 0; */
-}
 
-.error-handler {
-  top: 450px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, rgba(0, 42, 72, 0), #002a48 20%, #0a5d97);
-  width: 100%;
-  height: 70px;
-  mix-blend-mode: normal;
-  z-index: 5;
-}
 .trang-ch-child {
   position: absolute;
   top: 1521px;
@@ -797,6 +751,7 @@ body::-webkit-scrollbar {
 .reducer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 .reducer {
@@ -872,7 +827,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  debug_commit: f6aba90;
+  /* debug_commit: f6aba90; */
 }
 .frame-child57,
 .frame-child58 {
@@ -1169,11 +1124,27 @@ body::-webkit-scrollbar {
 }
 .cu-chuyn-child {
   height: 138px;
-  margin: 0 !important;
+  width: 100%;
+  margin: 0;
   top: 0;
   right: 0;
   background: linear-gradient(180deg, #fff 86.5%, rgba(255, 255, 255, 0));
   z-index: 1;
+}
+@media only screen and (max-width: 1023px) {
+  /* .cu-chuyn2,  */
+  /* .cu-chuyn-child,   */
+  .logo-hoc-vien-am-nhac-quoc-gia-wrapper,
+  .frame-parent24,
+  .frame-wrapper12,
+  .tiu-18
+   {
+    display: none!important; 
+  }
+  .cu-chuyn-child{
+    height: 120px;
+    width: 100%;
+  }
 }
 .logo-hoc-vien-am-nhac-quoc-gia-icon9 {
   width: 124px;
@@ -1185,7 +1156,7 @@ body::-webkit-scrollbar {
 .logo-hoc-vien-am-nhac-quoc-gia-wrapper {
   height: 138px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0 0 var(--padding-sm);
@@ -1376,7 +1347,58 @@ body::-webkit-scrollbar {
 .tiu-18 a {
   overflow: auto ;
 }
+/* .anh-nen-icon,
+.error-handler {
+  position: absolute;
+  top: 107px;
+  left: 0;
+  width: 100%;
+  height: 504px;
 
+} */
+/* .anh-nen-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow-x: hidden;
+} */
+.anh-nen-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%; 
+  height: 100%; 
+  /* margin: 0;
+  padding: 0; */
+}
+
+.error-handler {
+  /* top: 450px; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(0, 42, 72, 0), #002a48 20%, #0a5d97);
+  width: 100%;
+  height: 70px;
+  mix-blend-mode: normal;
+  z-index: 5;
+  min-height: 74px;
+}
 .cu-chuyn2,
 .frame-parent24 {
   align-items: flex-end;
@@ -1389,11 +1411,13 @@ body::-webkit-scrollbar {
   gap: var(--gap-10xs);
 }
 .cu-chuyn2 {
+  /* anhlinhdzsua */
+  height: 90px;
+  width: 100%;
   align-self: stretch;
   flex-direction: row;
   padding: 0 var(--padding-smi) var(--padding-9xs);
   box-sizing: border-box;
-  position: relative;
   gap: var(--gap-28xl);
   z-index: 3;
   /* thêm wrap */
@@ -1420,9 +1444,9 @@ body::-webkit-scrollbar {
 }
 .hc-vin-m2 {
   margin: 0;
-  width: 2000px;
+  width: 80%;
   position: relative;
-  font-size: inherit;
+  font-size: 48px;
   line-height: 76.8px;
   font-weight: 600;
   font-family: inherit;
@@ -1434,8 +1458,8 @@ body::-webkit-scrollbar {
   align-self: center;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 0 var(--padding-29xl) 0 var(--padding-31xl);
   z-index: 3;
 }
@@ -1447,7 +1471,7 @@ body::-webkit-scrollbar {
 .hc-vin-m-container1 {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-xl);
+  font-size: 16px;
   font-weight: 500;
   font-family: var(--font-plus-jakarta-sans);
   text-align: center;
@@ -1524,6 +1548,9 @@ body::-webkit-scrollbar {
   max-width: 100%;
 }
 .shape-container1 {
+  background: url(./public/www.vnam.edu.vn-vnamresource-users-hoang-_hoc-vien-2021.jpg) center center / cover no-repeat!important;
+  position: absolute;
+  bottom: 0;
   align-self: stretch;
   padding: 178px 140px var(--padding-63xl) 140px;
   box-sizing: border-box;
@@ -1534,6 +1561,7 @@ body::-webkit-scrollbar {
   color: var(--color-white);
   font-family: var(--font-roboto);
 }
+
 .cu-chuyn-group {
   position: absolute;
   top: 0;
@@ -1934,16 +1962,18 @@ body::-webkit-scrollbar {
   letter-spacing: normal;
 }
 /* @media screen and (max-width: 1350px) { */
-  @media only screen and (max-width: 1000px) and (min-width: 600px) {
+  /* @media only screen and (max-width: 1000px) and (min-width: 600px) {
   .timer-trigger {
     flex-wrap: wrap;
   }
   .hinhanh1 {
     flex: 1;
+    width: 50%;
     gap: 220px 110px;
   }
   .prioritizer {
     flex: 1;
+    width: 50%;
   }
   .cu-chuyn2,
   .reducer {
@@ -1963,6 +1993,10 @@ body::-webkit-scrollbar {
   .stroke-colors,
   .tiu-18 {
     flex-wrap: wrap;
+  }
+  .prioritizer,
+  .hinhanh1 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -2126,14 +2160,14 @@ body::-webkit-scrollbar {
   grid-template-columns: 1fr;
 }
 
-@media only screen and (min-width: 1001px) {
+/* @media only screen and (min-width: 1001px) {
   .cu-chuyn2{
     flex-wrap: wrap;
     order: 0;
   }
-  /* .shape-container1{
+  .shape-container1{
     flex-wrap: wrap;
-  } */
+  }
 }
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
   body {
@@ -2152,7 +2186,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     order: 1;
   }
-}
+} */ */
 .tiu-18 div a:hover{
   background: #ebebeb;
   border-radius: 5px;
@@ -2195,11 +2229,11 @@ body::-webkit-scrollbar {
   visibility: visible;
 }
 .mega-box1{
-  display: block;
   position: absolute;
+  /* background: white; */
   top: 50px;
-  width: 200px; 
-  left: 5px;
+  width: 850px; 
+  left: -200px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2210,17 +2244,16 @@ body::-webkit-scrollbar {
   background: white;
   padding: 5px 20px;
   display: flex;
-  width: 850px;
+  width: 750px;
   justify-content: space-evenly;
   /* đang ở đây */
   z-index: 1000;
 }
 .mega-box2{
-  display: block;
   position: absolute;
   top: 50px;
-  width: 200px; 
-  left: 5px;
+  width: 850px; 
+  left: -300px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2228,21 +2261,16 @@ body::-webkit-scrollbar {
 .mega-box2 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 25px;
   display: flex;
-  width: 850px;
+  width: 700px;
   justify-content: space-evenly;
 }
 .mega-box3{
-  /* position: absolute;
-  top: 150px;
-  width: 1190px; 
-  left: 890px; */
-  display: block;
   position: absolute;
   top: 50px;
-  width: 200px; 
-  left: 5px;
+  width: 850px; 
+  left: -290px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2250,18 +2278,16 @@ body::-webkit-scrollbar {
 .mega-box3 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 25px;
   display: flex;
-  width: 850px;
+  width: 700px;
   justify-content: space-evenly;
 }
 .mega-box4{
-  display: block;
   position: absolute;
   top: 50px;
-  width: 200px; 
-  right: 0 ;
-  left: 0;
+  width: 850px; 
+  left: -290px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2269,22 +2295,16 @@ body::-webkit-scrollbar {
 .mega-box4 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 25px;
   display: flex;
-  width: 850px;
+  width: 700px;
   justify-content: space-evenly;
 }
 .mega-box5{
-  /* position: absolute;
-  top: 50px;
-  width: 1190px; 
-  right: 30px; */
-  display: block;
   position: absolute;
   top: 50px;
-  width: 200px; 
-  right: 0 ;
-  left: 0;
+  width: 850px; 
+  right: -450px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2292,16 +2312,16 @@ body::-webkit-scrollbar {
 .mega-box5 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 25px;
   display: flex;
-  width: 850px;
-  justify-content:center;
+  width: 700px;
+  justify-content: space-evenly;
 }
 .mega-box6{
   position: absolute;
-  top: 150px;
-  width: 1190px; 
-  right: -85px;
+  top: 50px;
+  width: 850px; 
+  right: -320px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2309,17 +2329,17 @@ body::-webkit-scrollbar {
 .mega-box6 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 25px;
   display: flex;
-  width: 850px;
-  justify-content:center;
+  width: 700px;
+  justify-content: space-evenly;
 }
 .mega-box7{
   display: block;
   position: absolute;
-  top: 150px;
-  width: 1190px; 
-  right: -310px;
+  top: 50px;
+  width: 850px; 
+  right: -190px;
   opacity: 1;
   visibility: hidden;
   transition: all 0.3s ease;
@@ -2328,12 +2348,14 @@ body::-webkit-scrollbar {
 .mega-box7 .content{
   position: relative;
   background: white;
-  /* padding: 5px 25px; */
+  padding: 5px 25px;
   display: flex;
-  width: 850px;
-  justify-content:center;
+  width: 700px;
+  justify-content: space-evenly;
 }
-
+.mega-box6 .content .row {
+  padding-top: 30px;
+}
 .content .row{
   /* width: calc(25% - 30px); */
   height: 200px;
@@ -2352,16 +2374,16 @@ body::-webkit-scrollbar {
 .content .row:nth-child(1), .content .row:nth-child(2){
   border-left: 0px;
 }
+.mega-links li a{
+  text-decoration: none;
+  color: black;
+}
 .row .tiu-18 div a{
   padding: 0 20px;
   color: #002A48;
   font-size: 22px;
   display: block;
 }
-/* .mega-box1, .mega-box2, .mega-box3, .mega-box4, .mega-box5, .mega-box6, .mega-box7 {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-} */
+@media only 
   
 
