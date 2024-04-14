@@ -30,7 +30,7 @@
   .logo-hoc-vien-am-nhac-quoc-gia-wrapper,
   .frame-parent24,
   .frame-wrapper12,
-  .tiu-18
+  .navi-bar
    {
     display: none!important; 
   }
@@ -220,11 +220,11 @@
 }
 .cu-chuyn2,
 .frame-parent24,
-.tiu-18 {
+.navi-bar {
   display: flex;
   justify-content: flex-start;
 }
-.tiu-18 {
+.navi-bar {
   align-self: stretch;
   flex-direction: row;
   /* justify-content: space-around; */
@@ -239,7 +239,7 @@
   /* padding-right: 0px;
   margin-right: 0px; */
 }
-.tiu-18 a {
+.navi-bar a {
   overflow: auto ;
 }
 /* 
@@ -319,44 +319,44 @@
 
 /* Phần này là phần dropdown mega menu */
 /* Hiệu ứng nhấp chữ */
-.tiu-18 div a:hover{
+.navi-bar div a:hover{
     background: #ebebeb;
     border-radius: 5px;
     transition: all 0.3s ease;
   }
-  .tiu-18 div a:active{
+  .navi-bar div a:active{
     text-decoration: none;
     color: #00A9DE;
     z-index: 1000;
   }
   /* Hiệu ứng hiện ra menu */
-  .tiu-18 div:hover .mega-box1{
+  .navi-bar div:hover .mega-box1{
     opacity: 1;
     visibility: visible;
     z-index: 1000;
   }
-  .tiu-18 div:hover .mega-box2{
+  .navi-bar div:hover .mega-box2{
     opacity: 1;
     visibility: visible;
     z-index: 1000;
   }
-  .tiu-18 div:hover .mega-box3{
+  .navi-bar div:hover .mega-box3{
     opacity: 1;
     visibility: visible;
   }
-  .tiu-18 div:hover .mega-box4{
+  .navi-bar div:hover .mega-box4{
     opacity: 1;
     visibility: visible;
   }
-  .tiu-18 div:hover .mega-box5{
+  .navi-bar div:hover .mega-box5{
     opacity: 1;
     visibility: visible;
   }
-  .tiu-18 div:hover .mega-box6{
+  .navi-bar div:hover .mega-box6{
     opacity: 1;
     visibility: visible;
   }
-  .tiu-18 div:hover .mega-box7{
+  .navi-bar div:hover .mega-box7{
     opacity: 1;
     visibility: visible;
   }
@@ -511,13 +511,13 @@
     text-decoration: none;
     color: black;
   }
-  .row .tiu-18 div a{
+  .row .navi-bar div a{
     padding: 0 20px;
     color: #002A48;
     font-size: 22px;
     display: block;
   }
-  .trang-ch8 {
+  .trang-chu {
     width: 100%;
     height: 3371px;
     position: relative;
