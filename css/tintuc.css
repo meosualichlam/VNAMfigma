@@ -1,6 +1,9 @@
 /* header */
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .header{
- 
     height: 140px;
 }
 .header-wrapper{
@@ -45,12 +48,12 @@
 }
 /* Flex box tin tức hoạt động */
 .tintuchd-title {
-    padding-top: 790px;
+    padding-top: 700px;
 }
 .tintuchd-main{
     display: flex;
     margin-left: -0.5px;
-    padding-right: 20px;
+    padding: 0 30px;
 }
 .tintuchd-detail:first-child{
     border: 20px;
@@ -58,7 +61,7 @@
     background-color: rgb(216, 213, 213);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
     width: 60%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     text-align: center;
 }
 /* Phần bên phải listnews */
@@ -380,4 +383,27 @@
 }
 .ketnoi-item {
     padding: 20px;
+}
+.context-navigation {
+    position: relative;
+    padding: 40px 30px;
+    background-color: #b8c6d7;
+    top: 700px;
+    width: 100%;
+    height: 70px;
+}
+.context-navigation-container {
+    position: relative;
+    height: 40px;
+    width: 800px;
+    margin-top: -10px ;
+}
+.context-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 10px;
+    height: 40px;
 }

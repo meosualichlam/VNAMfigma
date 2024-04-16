@@ -9,13 +9,262 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="./css/khoapiano.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="global.css">
 </head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /* .main{
+        flex-grow: 1;
+    } */
+    .cu-chuyn-group {
+        flex-grow: 1;
+    }
+    .shape-container1{
+        height: 78vh;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+    .fill-operations {
+      padding-left: 198px;
+      padding-top: 30px;
+      padding-bottom: 200px;
+    }
+    .content {
+      padding-bottom: 50px;
+    }
+</style>
 <body>
     <!-- Header-video -->
     <header class="header">
         <div class="video">
             <h1>VIDEO</h1>
         </div>
+        <!-- Header-video -->
+
+        <section class="cu-chuyn-group">
+            <div class="cu-chuyn2">
+              <header class="cu-chuyn-child">
+                 <label for="nav-mobile-input" class="nav__mobile-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
+                <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+               
+                <label for="nav-mobile-input" class="nav__overlay"></label>
+                  <nav class="nav__mobile">
+                    <label for="nav-mobile-input" class="nav__mobile-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                    </label>
+                    <ul class="nav__mobile-list">
+                        <div><img class="logo-hoc-vien-am-nhac-quoc-gia" loading="lazy" alt="" src="./public/logohocvienamnhacquocgiavietnamvnam-1@2x.png"></div>
+                        <li><a href="" class="nav__mobile-links">Trang chủ</a></li>
+                        <li><a href="" class="nav__mobile-links">Về chúng tôi</a></li>
+                        <li><a href="" class="nav__mobile-links">Tin tức</a></li>
+                        <li><a href="" class="nav__mobile-links">Đào tạo</a></li>
+                        <li><a href="" class="nav__mobile-links">Tuyển sinh</a></li>
+                        <li><a href="" class="nav__mobile-links">Nghiên cứu</a></li>
+                        <li><a href="" class="nav__mobile-links">Đơn vị</a></li>
+                        <li><a href="" class="nav__mobile-links">Đăng nhập</a></li>
+                    </ul>
+                </nav> 
+              </header>
+              <div class="logo-hoc-vien-am-nhac-quoc-gia-wrapper">
+                <img
+                  class="logo-hoc-vien-am-nhac-quoc-gia-icon9"
+                  loading="lazy"
+                  alt=""
+                  src="./public/logohocvienamnhacquocgiavietnamvnam-1@2x.png"
+                />
+              </div>
+              <div class="frame-parent24">
+                <div class="frame-wrapper12">
+                  <div class="frame-parent25">
+                    <div class="frame-wrapper13">
+                      <div class="frame-parent26">
+                        <div class="ng-nhp-parent4">
+                          <i class="ng-nhp8" id="ngNhpText"><a href="dangnhap.html" style="color:#002A48; text-decoration: none;">Đăng nhập</a></i>
+                          <i class="ngn-ng8"><a href="#" style="color:#002A48; text-decoration: none;">Ngôn ngữ</a></i>
+                        </div>
+                        <div class="rectangle-parent59">
+                          <input class="frame-child65" type="text" />
+    
+                          <i class="tm-kim8">Tìm kiếm</i>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      class="icon5"
+                      loading="lazy"
+                      alt=""
+                      src="./public/registration-button.svg"
+                    />
+                  </div>
+                </div>
+                <div class="tiu-18">
+                  <div class="trang-ch9"><a href="#" style="color:#002A48; text-decoration: none;">Trang chủ</a></div>
+                  <div class="tin-tc-v8"><a href="#" style="color:#002A48; text-decoration: none;">Tin tức và câu chuyện</a>
+                    <div class="mega-box1">
+                      <div class="content">
+                          <div class="row">
+                              <header>TIN TỨC VNAM</header>
+                              <ul class="mega-links">
+                                  <li><a href="">Tin tức nổi bật</a></li>
+                                  <li><a href="">Tin ảnh</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <header>CÂU CHUYỆN</header>
+                              <ul class="mega-links">
+                                  <li><a href="">Giảng viên</a></li>
+                                  <li><a href="">Sinh viên</a></li>
+                                  <li><a href="">Hợp tác quốc tế</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div></div>
+                  <div class="o-to16"><a href="#" style="color:#002A48; text-decoration: none;">Đào tạo</a>
+                    <!-- <p class="o-to17">Đào tạo</p> -->
+                    <div class="mega-box2">
+                      <div class="content">
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Thông báo đào tạo</a></li>
+                                  <li><a href="">Đại học chính quy</a></li>
+                                  <li><a href="">Sau đại học</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Trung cấp chính quy</a></li>
+                                  <li><a href="">Đại học tại chức</a></li>
+                                  <li><a href="">Liên kết đào tạo</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="tuyn-sinh16"><a href="#" style="color:#002A48; text-decoration: none;">Tuyển sinh</a>
+                    <!-- <p class="tuyn-sinh17">Tuyển sinh</p> -->
+                    <div class="mega-box3">
+                      <div class="content">
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Thông tin tuyển sinh</a></li>
+                                  <li><a href="">Kết quả tuyển sinh</a></li>
+                                  <li><a href="">Trung tâm đào tạo</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Các biểu mẫu</a></li>
+                                  <li><a href="">Các chuyên ngành</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+                  </div>
+                  <div class="nghin-cu8"><a href="#" style="color:#002A48; text-decoration: none;">Nghiên cứu</a>
+                    <div class="mega-box4">
+                      <div class="content">
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Thông tin nghiên cứu KH</a></li>
+                                  <li><a href="">Luận văn Thạc sĩ</a></li>
+                                  <li><a href="">Mẫu đăng ký GS, PGS</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Luận án Tiến sĩ</a></li>
+                                  <li><a href="">Biểu mẫu đăng ký NCKH</a></li>
+                                  <li><a href="">Giáo trình</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="bin-din8"><a href="#" style="color:#002A48; text-decoration: none;">Biển diễn</a>
+                    <div class="mega-box5">
+                      <div class="content">
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Thông báo biểu diễn</a></li>
+                                  <li><a href="">Ảnh biểu diễn</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Đặt vé</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="n-v8"><a href="#" style="color:#002A48; text-decoration: none;">Đơn vị</a>
+                    <div class="mega-box6">
+                      <div class="content">
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Viện Âm Nhạc</a></li>
+                                  <li><a href="">Thư viện</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Các trung tâm</a></li>
+                                  <li><a href="">Dàn nhạc</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="v-chng-ti8"><a href="#" style="color:#002A48; text-decoration: none;">Về chúng tôi</a>
+                    <div class="mega-box7">
+                      <div class="content">
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Giới thiệu</a></li>
+                                  <li><a href="">Tổ chức</a></li>
+                              </ul>
+                          </div>
+                          <div class="row">
+                              <ul class="mega-links">
+                                  <li><a href="">Ba công khai</a></li>
+                                  <li><a href="">Các khoa, bộ môn</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <div class="shape-container1">
+                    <div class="error-handler"></div>
+                    <div class="shape-container-child" style="visibility: hidden;"></div>
+                    <div class="color-modifier-parent">
+                      <div class="color-modifier">
+                      </div>
+                      <div class="hc-vin-m-container1">
+                        
+                      </div>
+                    </div>
+                    <div class="shape-container-inner">
+ 
+                        </div>
+                      </div>
+                    
+          </section>
+    </header>
         <div class="menu-main_chung">
             <div class="title-menu">
                 <nav>
@@ -175,5 +424,45 @@
              </div>
         </div>
     </main>
+    <footer class="footer1">
+        <div class="footer-child"></div>
+        <img
+        class="logo-hoc-vien-am-nhac-quoc-gia-icon8"
+        loading="lazy"
+        alt=""
+        src="./public/logohocvienamnhacquocgiavietnamvnam-2@2x.png"
+        />
+
+        <div class="geometry-handler">
+        <div class="connection-manager">
+            <div class="hc-vin-m-container">
+            <p class="hc-vin-m">HỌC VIỆN ÂM NHẠC QUỐC GIA VIỆT NAM</p>
+            <p class="vietnam-national-academy">
+                VIETNAM NATIONAL ACADEMY OF MUSIC
+            </p>
+            </div>
+            <!-- <div class="output-dispatcher">
+            <div class="condition-checker">
+                <div class="loop-controller"></div>
+            </div>
+            <div class="branch-splitter"></div>
+            </div> -->
+        </div>
+        </div>
+        <div class="merge-combiner">
+        <b class="bn-quyn-thuc-container">
+            <p class="bn-quyn-thuc">
+            Bản quyền thuộc về Học viện âm nhạc quốc gia Việt Nam
+            </p>
+            <p class="ho-nam-ng">77 Hào Nam, Đống Đa, Hà Nội</p>
+            <p class="t-844-3851">
+            ĐT: +844 3851 4969 / 3856 1842 - Fax: +844 3851 3545
+            </p>
+            <p class="website-wwwvnameduvn-">
+            Website: www.vnam.edu.vn - Email: hvan@vnam.edu.vn
+            </p>
+        </b>
+        </div>
+    </footer>
 </body>
 </html>
