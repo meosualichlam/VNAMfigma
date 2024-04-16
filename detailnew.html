@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức chi tiết</title>
+    <link rel="stylesheet" href="./css/detailnew.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500;600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /* .main{
+        flex-grow: 1;
+    } */
+    .cu-chuyn-group {
+        flex-grow: 1;
+    }
+    .shape-container1{
+        height: 78vh;
+        width: 100%;
+    }
+    /* footer {
+        width: 100%%;
+        bottom: 0;
+        left: 0;
+    } */
+    .fill-operations {
+      padding-left: 50px;
+      padding-top: 30px;
+    }
+    .main {
+      padding-bottom: 50px;
+    }
+</style>
+<body>
+    <!-- Phần header -->
+    <section class="cu-chuyn-group">
+        <div class="cu-chuyn2">
+          <header class="cu-chuyn-child">
+            <div class="nav__mobile-btn">
+              <i class="fa-solid fa-bars"></i>
+        
+            </div>
+            <div class="nav__overlay">
+                
+            </div>
+          </header>
+          <div class="logo-hoc-vien-am-nhac-quoc-gia-wrapper">
+            <img
+              class="logo-hoc-vien-am-nhac-quoc-gia-icon9"
+              loading="lazy"
+              alt=""
+              src="./public/logohocvienamnhacquocgiavietnamvnam-1@2x.png"
+            />
+          </div>
+          <div class="frame-parent24">
+            <div class="frame-wrapper12">
+              <div class="frame-parent25">
+                <div class="frame-wrapper13">
+                  <div class="frame-parent26">
+                    <div class="ng-nhp-parent4">
+                      <i class="ng-nhp8" id="ngNhpText"><a href="dangnhap.html" style="color:#002A48; text-decoration: none;">Đăng nhập</a></i>
+                      <i class="ngn-ng8"><a href="#" style="color:#002A48; text-decoration: none;">Ngôn ngữ</a></i>
+                    </div>
+                    <div class="rectangle-parent59">
+                      <input class="frame-child65" type="text" />
+
+                      <i class="tm-kim8">Tìm kiếm</i>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="icon5"
+                  loading="lazy"
+                  alt=""
+                  src="./public/registration-button.svg"
+                />
+              </div>
+            </div>
+            <div class="tiu-18">
+              <div class="trang-ch9"><a href="#" style="color:#002A48; text-decoration: none;">Trang chủ</a></div>
+              <div class="tin-tc-v8"><a href="#" style="color:#002A48; text-decoration: none;">Tin tức và câu chuyện</a>
+                <div class="mega-box1">
+                  <div class="content">
+                      <div class="row">
+                          <header>TIN TỨC VNAM</header>
+                          <ul class="mega-links">
+                              <li><a href="">Tin tức nổi bật</a></li>
+                              <li><a href="">Tin ảnh</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <header>CÂU CHUYỆN</header>
+                          <ul class="mega-links">
+                              <li><a href="">Giảng viên</a></li>
+                              <li><a href="">Sinh viên</a></li>
+                              <li><a href="">Hợp tác quốc tế</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div></div>
+              <div class="o-to16"><a href="#" style="color:#002A48; text-decoration: none;">Đào tạo</a>
+                <!-- <p class="o-to17">Đào tạo</p> -->
+                <div class="mega-box2">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông báo đào tạo</a></li>
+                              <li><a href="">Đại học chính quy</a></li>
+                              <li><a href="">Sau đại học</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Trung cấp chính quy</a></li>
+                              <li><a href="">Đại học tại chức</a></li>
+                              <li><a href="">Liên kết đào tạo</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="tuyn-sinh16"><a href="#" style="color:#002A48; text-decoration: none;">Tuyển sinh</a>
+                <!-- <p class="tuyn-sinh17">Tuyển sinh</p> -->
+                <div class="mega-box3">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông tin tuyển sinh</a></li>
+                              <li><a href="">Kết quả tuyển sinh</a></li>
+                              <li><a href="">Trung tâm đào tạo</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Các biểu mẫu</a></li>
+                              <li><a href="">Các chuyên ngành</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </li>
+              </div>
+              <div class="nghin-cu8"><a href="#" style="color:#002A48; text-decoration: none;">Nghiên cứu</a>
+                <div class="mega-box4">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông tin nghiên cứu KH</a></li>
+                              <li><a href="">Luận văn Thạc sĩ</a></li>
+                              <li><a href="">Mẫu đăng ký GS, PGS</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Luận án Tiến sĩ</a></li>
+                              <li><a href="">Biểu mẫu đăng ký NCKH</a></li>
+                              <li><a href="">Giáo trình</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="bin-din8"><a href="#" style="color:#002A48; text-decoration: none;">Biển diễn</a>
+                <div class="mega-box5">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông báo biểu diễn</a></li>
+                              <li><a href="">Ảnh biểu diễn</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Đặt vé</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="n-v8"><a href="#" style="color:#002A48; text-decoration: none;">Đơn vị</a>
+                <div class="mega-box6">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Viện Âm Nhạc</a></li>
+                              <li><a href="">Thư viện</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Các trung tâm</a></li>
+                              <li><a href="">Dàn nhạc</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="v-chng-ti8"><a href="#" style="color:#002A48; text-decoration: none;">Về chúng tôi</a>
+                <div class="mega-box7">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Giới thiệu</a></li>
+                              <li><a href="">Tổ chức</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Ba công khai</a></li>
+                              <li><a href="">Các khoa, bộ môn</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="shape-container1">
+                <div class="error-handler"></div>
+                <div class="shape-container-child" style="visibility: hidden;"></div>
+                <div class="color-modifier-parent">
+                  <div class="color-modifier">
+                  </div>
+                  <div class="hc-vin-m-container1">
+                    
+                  </div>
+                </div>
+                <div class="shape-container-inner">
+                   
+                      
+                        
+                    </div>
+                  </div>
+                
+      </section>
+    <!-- Phần main -->
+    <div class="main">
+        <div class="title">
+            <h2> <b> Thư ngỏ của Giám đốc Học viện Âm nhạc Quốc gia Việt Nam 
+                nhân kỷ niệm 66 năm thành lập Học viện</b> </h2>
+                <div class="titledate">
+                    <div class="box">
+                        <img src="ảnh/🦆 icon _clock_.svg" alt="">
+                    </div>
+                    <div class="box2">
+                        <h5><i>Thứ năm, 11/04/2024</i></h5>
+                    </div>
+                </div>
+        </div>
+        <div class="content">
+            <div class="contentnews" >
+                <img src="ảnh/thư ngỏ.png" alt="">
+            </div>
+            <div class="contentlistnews">
+                <div class="calendar-chung">
+                            <div class="calendar">
+                              <div class="month flex">
+                                <div class="prev">
+                                  <i class="fas fa-chevron-left"></i>
+                                </div>
+                                <div class="content">
+                                  <h1>Tháng 5</h1>
+                                  <p>23 Tháng 5 Năm 2022</p>
+                                </div>
+                                <div class="next">
+                                  <i class="fas fa-chevron-right"></i>
+                                </div>
+                              </div>
+                        
+                              <div class="weekdays flex">
+                                <div>Thứ hai</div>
+                                <div>Thứ ba</div>
+                                <div>Thứ tư</div>
+                                <div>Thứ năm</div>
+                                <div>Thứ sáu</div>
+                                <div>Thứ bảy</div>
+                                <div>Chủ nhật</div>
+                              </div>
+                        
+                              <div class="days flex">
+                                <div class="previous-day">26</div>
+                                <div class="previous-day">27</div>
+                                <div class="previous-day">28</div>
+                                <div class="previous-day">29</div>
+                                <div class="previous-day">30</div>
+                                <div class="previous-day">31</div>
+                                <div class="">1</div>
+                                <div class="today">11</div>
+                                <div class="">31</div>
+                                <div class="next-days">1</div>
+                                <div class="next-days">2</div>
+                                <div class="next-days">3</div>
+                                <div class="next-days">4</div>
+                                <div class="next-days">5</div>
+                              </div>
+                            </div>
+                     
+                        
+                </div>
+                <div class="listnews-title">
+                    <h2 style="color: rgba(0, 42, 72, 1);"> <b><u> Tin tức nổi bật </u></b></h2>
+                </div>
+                <div class="listnews">
+                    <!-- Mục 1 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Mục 2 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/học bổng toyota.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Học bổng Toyota dành cho các tài năng âm nhạc năm 2019.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Mục 3 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/hội thi tài năng trẻ.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Học viện Âm nhạc tham dự Hội thi Tài năng trẻ học sinh, sinh viên tại Nha Trang.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Mục 4 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/nghệ sĩ bùi công duy.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> NSƯT. Bùi Công Duy tham gia Hội đồng Giám khảo cuộc thi âm nhạc quốc tế Tchaikovsky lần thứ X.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- Mục 5 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/lễ kí kết.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Lễ ký kết hợp tác giữa Học viện Âm nhạc Quốc gia và Quỹ Đào Minh Quang.</p>
+                            </div>
+                    </div>
+                    <!-- Mục 6 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/cuộc thi độc tấu và hoà tấu.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Một số hình ảnh trong cuộc thi Độc tấu và Hòa tấu nhạc cụ dân tộc toàn quốc 2020.</p>
+                            </div> 
+                        </div>
+                    </div>
+          
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="detailnew.js"></script>
+    <!-- Phần tin tức khác  -->
+    <div class="tintuckhac">
+        <div class="title-news">
+            <h2><b><u> CÁC TIN KHÁC </u> </b></h2>
+        </div>
+        <div class="list-tintuckhac">
+            <!-- Mục 1 -->
+            <div class="box-tintuckhac">
+                <p>
+                    Sinh viên, học sinh Học viện Âm nhạc giành nhiều giải cao trong Hội thi Tài năng trẻ học sinh,sinh viên các cơ sở đào tạo văn hóa nghệ thuật toàn quốc 2020. 
+                </p>
+                <p class="date-tintuckhac"> <i> 21/12/2020 </i></p>
+                <hr>
+                <!-- Mục 2 -->
+            </div>
+            <div class="box-tintuckhac">
+                <p>
+                    Hội thi "Tài năng trẻ học sinh, sinh viên các cơ sở đào tạo văn hóa nghệ thuật toàn quốc 2020.
+                    
+                </p>
+                <p class="date-tintuckhac"> <i> 15/12/2020</i></p>
+                <hr>
+            </div>
+            <!-- Mục 3 -->
+            <div class="box-tintuckhac">
+                <p>
+                    Sinh viên, học sinh Học viện Âm nhạc Quốc gia Việt Nam giành giải thưởng trong Cuộc thi âm nhạc Mùa Thu. 
+                </p>
+                <p class="date-tintuckhac"> <i> 13/12/2019  </i></p>
+                <hr>
+            </div>
+            <!-- Mục 4 -->
+            <div class="box-tintuckhac">
+                <p>
+                    Phát biểu của lãnh đạo HVÂNQGVN tại lễ Khai giảng năm học 2019-2020. 
+                    
+                </p>
+                <p class="date-tintuckhac"> <i> 25/09/2019 </i></p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="fill-operations">
+        <b class="qung-co">Quảng cáo</b>
+        <section class="timer-trigger">
+          <img
+            class="parallel-processor-icon"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-49@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon1"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-46@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon2"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-44@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon3"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-45@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon4"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-47@2x.png"
+          />
+            <img
+              class="stack-memory-icon"
+              loading="lazy"
+              alt=""
+              src="./public/rectangle-48@2x.png"
+            />
+
+        </section>
+      </div>
+      </div>
+      <footer class="footer1">
+        <div class="footer-child"></div>
+        <img
+          class="logo-hoc-vien-am-nhac-quoc-gia-icon8"
+          loading="lazy"
+          alt=""
+          src="./public/logohocvienamnhacquocgiavietnamvnam-2@2x.png"
+        />
+
+        <div class="geometry-handler">
+          <div class="connection-manager">
+            <div class="hc-vin-m-container">
+              <p class="hc-vin-m">HỌC VIỆN ÂM NHẠC QUỐC GIA VIỆT NAM</p>
+              <p class="vietnam-national-academy">
+                VIETNAM NATIONAL ACADEMY OF MUSIC
+              </p>
+            </div>
+            <!-- <div class="output-dispatcher">
+              <div class="condition-checker">
+                <div class="loop-controller"></div>
+              </div>
+              <div class="branch-splitter"></div>
+            </div> -->
+          </div>
+        </div>
+        <div class="merge-combiner">
+          <b class="bn-quyn-thuc-container">
+            <p class="bn-quyn-thuc">
+              Bản quyền thuộc về Học viện âm nhạc quốc gia Việt Nam
+            </p>
+            <p class="ho-nam-ng">77 Hào Nam, Đống Đa, Hà Nội</p>
+            <p class="t-844-3851">
+              ĐT: +844 3851 4969 / 3856 1842 - Fax: +844 3851 3545
+            </p>
+            <p class="website-wwwvnameduvn-">
+              Website: www.vnam.edu.vn - Email: hvan@vnam.edu.vn
+            </p>
+          </b>
+        </div>
+      </footer>
+</body>
+</html>

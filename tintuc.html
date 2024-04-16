@@ -4,16 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin tức</title>
-    <link rel="stylesheet" href="tintuc.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./css/tintuc.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
 </head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    /* .main{
+        flex-grow: 1;
+    } */
+    .cu-chuyn-group {
+        flex-grow: 1;
+    }
+    .shape-container1{
+        height: 78vh;
+        width: 100%;
+    }
+    /* footer {
+        width: 100%%;
+        bottom: 0;
+        left: 0;
+    } */
+    .fill-operations {
+      padding-left: 190px;
+      padding-top: 30px;
+      padding-bottom: 200px;
+    }
+    .content {
+      padding-bottom: 50px;
+    }
+</style>
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <div class="wrapper header-wrapper">
             <a href="#" class="logo">
                 <img src="ảnh/ảnh logo xanh.jpg" alt="logo">
@@ -38,244 +69,443 @@
             </nav>
         </div>
     </header>
-    <!-- Banner -->
-    <!-- span áp dụng tất cả các thẻ trừ thẻ có span -->
     <span class="banner"> 
         <img src="ảnh/anh nen.png" alt="ảnh banner">
         <img src="ảnh/Rectangle 3.png" alt="">
-    </span>
- 
-   <main class="content"> 
-        <div class="tintuchd">
-            <div class="title">
-                <h2> <u> Tin tức hoạt động </u> </h2>
-            </div>
-            <!-- Phần bao tin tức hoạt động -->
-            <div class="cha">
-                <div class="trai">
-                    <div class="image-container">
-                        <img src="ảnh/ảnh kỉ niệm ngày nhà giáo.png" alt="Mô tả ảnh">
+    </span> -->
+     <!-- Phần header -->
+     <section class="cu-chuyn-group">
+        <div class="cu-chuyn2">
+          <header class="cu-chuyn-child">
+             <label for="nav-mobile-input" class="nav__mobile-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </label>
+            <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+           
+            <label for="nav-mobile-input" class="nav__overlay"></label>
+              <nav class="nav__mobile">
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                </label>
+                <ul class="nav__mobile-list">
+                    <div><img class="logo-hoc-vien-am-nhac-quoc-gia" loading="lazy" alt="" src="./public/logohocvienamnhacquocgiavietnamvnam-1@2x.png"></div>
+                    <li><a href="" class="nav__mobile-links">Trang chủ</a></li>
+                    <li><a href="" class="nav__mobile-links">Về chúng tôi</a></li>
+                    <li><a href="" class="nav__mobile-links">Tin tức</a></li>
+                    <li><a href="" class="nav__mobile-links">Đào tạo</a></li>
+                    <li><a href="" class="nav__mobile-links">Tuyển sinh</a></li>
+                    <li><a href="" class="nav__mobile-links">Nghiên cứu</a></li>
+                    <li><a href="" class="nav__mobile-links">Đơn vị</a></li>
+                    <li><a href="" class="nav__mobile-links">Đăng nhập</a></li>
+                </ul>
+            </nav> 
+          </header>
+          <div class="logo-hoc-vien-am-nhac-quoc-gia-wrapper">
+            <img
+              class="logo-hoc-vien-am-nhac-quoc-gia-icon9"
+              loading="lazy"
+              alt=""
+              src="./public/logohocvienamnhacquocgiavietnamvnam-1@2x.png"
+            />
+          </div>
+          <div class="frame-parent24">
+            <div class="frame-wrapper12">
+              <div class="frame-parent25">
+                <div class="frame-wrapper13">
+                  <div class="frame-parent26">
+                    <div class="ng-nhp-parent4">
+                      <i class="ng-nhp8" id="ngNhpText"><a href="dangnhap.html" style="color:#002A48; text-decoration: none;">Đăng nhập</a></i>
+                      <i class="ngn-ng8"><a href="#" style="color:#002A48; text-decoration: none;">Ngôn ngữ</a></i>
                     </div>
-                    <div class="image-info">
-                            <p > <b>Lễ kỷ niệm ngày Nhà giáo Việt Nam 20-11 tại Học viện </b></p>
-                     </div>
+                    <div class="rectangle-parent59">
+                      <input class="frame-child65" type="text" />
+
+                      <i class="tm-kim8">Tìm kiếm</i>
+                    </div>
+                  </div>
                 </div>
-                    <div class="main-phai">
-                        <!-- Mục 1 -->
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/ct rạng đông.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
-                        </div> 
-                    </div>
-                    <!-- Mục 2 -->
-                    <div class="main-phai">
+                <img
+                  class="icon5"
+                  loading="lazy"
+                  alt=""
+                  src="./public/registration-button.svg"
+                />
+              </div>
+            </div>
+            <div class="tiu-18">
+              <div class="trang-ch9"><a href="#" style="color:#002A48; text-decoration: none;">Trang chủ</a></div>
+              <div class="tin-tc-v8"><a href="#" style="color:#002A48; text-decoration: none;">Tin tức và câu chuyện</a>
+                <div class="mega-box1">
+                  <div class="content">
+                      <div class="row">
+                          <header>TIN TỨC VNAM</header>
+                          <ul class="mega-links">
+                              <li><a href="">Tin tức nổi bật</a></li>
+                              <li><a href="">Tin ảnh</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <header>CÂU CHUYỆN</header>
+                          <ul class="mega-links">
+                              <li><a href="">Giảng viên</a></li>
+                              <li><a href="">Sinh viên</a></li>
+                              <li><a href="">Hợp tác quốc tế</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div></div>
+              <div class="o-to16"><a href="#" style="color:#002A48; text-decoration: none;">Đào tạo</a>
+                <!-- <p class="o-to17">Đào tạo</p> -->
+                <div class="mega-box2">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông báo đào tạo</a></li>
+                              <li><a href="">Đại học chính quy</a></li>
+                              <li><a href="">Sau đại học</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Trung cấp chính quy</a></li>
+                              <li><a href="">Đại học tại chức</a></li>
+                              <li><a href="">Liên kết đào tạo</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="tuyn-sinh16"><a href="#" style="color:#002A48; text-decoration: none;">Tuyển sinh</a>
+                <!-- <p class="tuyn-sinh17">Tuyển sinh</p> -->
+                <div class="mega-box3">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông tin tuyển sinh</a></li>
+                              <li><a href="">Kết quả tuyển sinh</a></li>
+                              <li><a href="">Trung tâm đào tạo</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Các biểu mẫu</a></li>
+                              <li><a href="">Các chuyên ngành</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </li>
+              </div>
+              <div class="nghin-cu8"><a href="#" style="color:#002A48; text-decoration: none;">Nghiên cứu</a>
+                <div class="mega-box4">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông tin nghiên cứu KH</a></li>
+                              <li><a href="">Luận văn Thạc sĩ</a></li>
+                              <li><a href="">Mẫu đăng ký GS, PGS</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Luận án Tiến sĩ</a></li>
+                              <li><a href="">Biểu mẫu đăng ký NCKH</a></li>
+                              <li><a href="">Giáo trình</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="bin-din8"><a href="#" style="color:#002A48; text-decoration: none;">Biển diễn</a>
+                <div class="mega-box5">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Thông báo biểu diễn</a></li>
+                              <li><a href="">Ảnh biểu diễn</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Đặt vé</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="n-v8"><a href="#" style="color:#002A48; text-decoration: none;">Đơn vị</a>
+                <div class="mega-box6">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Viện Âm Nhạc</a></li>
+                              <li><a href="">Thư viện</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Các trung tâm</a></li>
+                              <li><a href="">Dàn nhạc</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="v-chng-ti8"><a href="#" style="color:#002A48; text-decoration: none;">Về chúng tôi</a>
+                <div class="mega-box7">
+                  <div class="content">
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Giới thiệu</a></li>
+                              <li><a href="">Tổ chức</a></li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <ul class="mega-links">
+                              <li><a href="">Ba công khai</a></li>
+                              <li><a href="">Các khoa, bộ môn</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="shape-container1">
+                <div class="error-handler"></div>
+                <div class="shape-container-child" style="visibility: hidden;"></div>
+                <div class="color-modifier-parent">
+                  <div class="color-modifier">
+                  </div>
+                  <div class="hc-vin-m-container1">
+                    
+                  </div>
+                </div>
+                <div class="shape-container-inner">
+                   
+                      
                         
                     </div>
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/học bổng toyota.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> Học bổng Toyota dành cho các tài năng âm nhạc năm 2019.</p>
-                        </div> 
-                    </div>
-                    <!-- Mục 3 -->
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/hội thi tài năng trẻ.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> Học viện Âm nhạc tham dự Hội thi Tài năng trẻ học sinh, sinh viên tại Nha Trang.</p>
-                        </div> 
-                    </div>
-                    <!-- Mục 4 -->
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/nghệ sĩ bùi công duy.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> NSƯT. Bùi Công Duy tham gia Hội đồng Giám khảo cuộc thi âm nhạc quốc tế Tchaikovsky lần thứ X.</p>
-                        </div> 
-                    </div>
-                    <!-- Mục 5 -->
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/lễ kí kết.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> Lễ ký kết hợp tác giữa Học viện Âm nhạc Quốc gia và Quỹ Đào Minh Quang.</p>
-                        </div> 
-                    </div>
-                    <!-- Mục 6 -->
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/tác phẩm việt nam và hàn quốc.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> Chương trình hoà nhạc các tác phẩm Việt Nam và Hàn Quốc.</p>
-                        </div> 
-                    </div>
-                    <!-- Mục 7 -->
-                    <div class="phai">
-                        <div class="phai-left">
-                            <img src="ảnh/cuộc thi độc tấu và hoà tấu.png" alt="">
-                        </div>
-                        <div class="phai-right">
-                                <p> Một số hình ảnh trong cuộc thi Độc tấu và Hòa tấu nhạc cụ dân tộc toàn quốc 2020.</p>
-                        </div> 
-                    </div>
-                    </div>
+                  </div>
+                
+      </section>
+   <main class="content"> 
+       
+            <div class="tintuchd-title">
+                <h2> <u> Tin tức hoạt động </u> </h2>
             </div>
-            <!-- End phần tin tức hoạt động -->
-            <!-- Phần tin ảnh -->
-            <div class="title">
-                <h2> <u> Tin ảnh </u> </h2>
-            </div>
-            <div class="tinanh">
-                <div class="anh-detail">
-                    <div class="image-container">
-                        <img src="ảnh/hoà nhạc kỷ niệm 100.png" alt="Mô tả ảnh">
+            <!-- Phần bao tin tức hoạt động -->  
+            <div class="tintuchd-main">
+                <div class="tintuchd-detail">
+                    <img src="ảnh/ảnh kỉ niệm ngày nhà giáo.png" alt="" class="img-tintuchd">
+                    <div class="tintuchd-content">
+                        <h3>Lễ kỷ niệm ngày Nhà giáo Việt Nam 20-11 tại Học viện</h3>
                     </div>
-                    <div class="image-info">
-                            <p > <b>Một số hình ảnh trong chương trình hoà nhạc kỷ niệm 100 ngày sinh nhạc sĩ Nguyễn Văn Thương</b></p>
-                     </div>
-                 </div>
-                 <div class="anh-detail">
-                    <div class="image-container">
-                        <img src="ảnh/cuộc thi âm nhạc quốc tế.png" alt="Mô tả ảnh">
-                    </div>
-                    <div class="image-info">
-                            <p > <b>Bế mạc Cuộc thi Âm nhạc Quốc tế Violon và Hòa tấu thính phòng Việt Nam 2019</b></p>
-                     </div>
-                 </div>
-                 <div class="anh-detail">
-                    <div class="image-container">
-                        <img src="ảnh/lễ khai giảng 2023-2024.png" alt="Mô tả ảnh">
-                    </div>
-                    <div class="image-info">
-                            <p > <b>MỘT VÀI HÌNH ẢNH LỄ KHAI GIẢNG NĂM HỌC 2023-2024 TẠI HỌC VIỆN ÂM NHẠC QUỐC GIA VIỆT NAM</b></p>
-                     </div>
-                 </div>
-            </div>
-            <!-- End tin ảnh -->
-           <!-- Tin cập nhật -->
-            <div class="title"> 
-                <h2> <u> Tin cập nhật </u></h2>
-            </div>
-           <div class="tintuc-list">
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 5 tháng 4.png" alt="">
                 </div>
-                <div class="tintuc-time">
+                <!-- Con 2 -->
+                <div class="tintuchd-detail">
+                   <div class="listnew">
+                    <!-- Mục 1 -->
+                    <div class="containnews-detail">
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <h3> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</h3>
+                            </div> 
+                        </div>
+                        <!-- Mục 2 -->
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                   
+                                <h3> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</h3>
+                            </div> 
+                        </div>
+                        <!-- Mục 3 -->
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
+                            </div> 
+                        </div>
+                        <!-- Mục 4 -->
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
+                            </div> 
+                        </div>
+                        <!-- Mục 5 -->
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
+                            </div> 
+                        </div>
+                        <!-- Mục 6 -->
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
+                            </div> 
+                        </div>
+                        <!-- Mục 7 -->
+                        <div class="phai">
+                            <div class="phai-left">
+                                <img src="ảnh/ct rạng đông.png" alt="">
+                            </div>
+                            <div class="phai-right">
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    
+                   </div>
+                </div>
+            </div>
+        <!-- Phần tin ảnh  -->
+            <div class="tinanh-title">
+                <h2><b>Tin ảnh </b></h2>
+            </div>
+            <div class="tinanh-main">
+                <div class="tinanh-detail">
+                    <img src="ảnh/hoà nhạc kỷ niệm 100.png" alt="ảnh mô tả" class="img-tinanh">
+                    <div class="tinanh-detail_content">
+                        <h3>Một số hình ảnh trong chương trình hoà nhạc kỷ niệm 100 ngày sinh nhạc sĩ Nguyễn Văn Thương</h3>
+                    </div>
+                </div>
+                <div class="tinanh-detail">
+                    <img src="ảnh/cuộc thi âm nhạc quốc tế.png" alt="ảnh mô tả" class="img-tinanh">
+                    <div class="tinanh-detail_content">
+                        <h3>Bế mạc Cuộc thi Âm nhạc Quốc tế cho Violon và Hòa tấu thính phòng Việt Nam 2019</h3>
+                    </div>
+                </div>
+                <div class="tinanh-detail">
+                    <img src="ảnh/lễ khai giảng 2023-2024.png" alt="ảnh mô tả" class="img-tinanh">
+                    <div class="tinanh-detail_content">
+                        <h3>Một vài hình ảnh lễ khai giảng năm học 2023-2024 tại Học viên âm nhạc Quốc gia Việt Nam</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+           <!-- Tin cập nhật -->
+        <div class="tincapnhat-title"> 
+            <h2> Tin cập nhật </h2>
+        </div>
+        <div class="tincapnhat-main">
+            <div class="tincapnhat-detail">
+                <img src="ảnh/ngày 5 tháng 4.png" alt="ảnh mô tả" class="img-tincapnhat">
+                <div class="tincapnhat-time">
                     <p> Th 4, 2024</p>
                      <h4> 5 </h4>
                 </div>
-                <div class="tintuc-content">
+                <div class="tincapnhat-content">
                     <p> Không khí tập luyện hăng say tràn ngập năng lượng của Dàn nhạc Trẻ Thế giới cùng 33 thành viên của Dàn nhạc giao hưởng Trẻ HVÂNQGVN (VNAMYO) đã sẵn sàng cho “ĐÊM THĂNG LONG”.</p>
                 </div>
             </div>
-            <!-- Mục 2 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 3 tháng 4.png" alt="">
-                </div>
-                <div class="tintuc-time">
+                <!-- Mục 2 -->
+            <div class="tincapnhat-detail">
+                <img src="ảnh/ngày 3 tháng 4.png" alt="ảnh mô tả" class="img-tincapnhat">
+                <div class="tincapnhat-time">
                     <p> Th 4, 2024</p>
                      <h4> 3 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Các nghệ sĩ và giảng viên ưu tú của Dàn nhạc Dân tộc Việt Nam - HVÂNQGVN cùng nhạc trưởng Đồng Quang Vinh đang tập luyện sôi nổi để chuẩn bị cho chương trình biểu diễn đặc biệt tháp tùng lãnh đạo cấp cao tại thu đô Bắc Kinh trong những ngày đầu tháng 4.2024.</p>
-                </div>
+                    </div>
+                <div class="tincapnhat-content">
+                        <p> Các nghệ sĩ và giảng viên ưu tú của Dàn nhạc Dân tộc Việt Nam - HVÂNQGVN cùng nhạc trưởng Đồng Quang Vinh đang tập luyện sôi nổi để chuẩn bị cho chương trình biểu diễn đặc biệt tháp tùng lãnh đạo cấp cao tại thu đô Bắc Kinh trong những ngày đầu tháng 4.2024.
+                        </p>
+                    </div>
+                    </div>
+                <!-- Mục 3 -->
+                    <div class="tincapnhat-detail">
+                        <img src="ảnh/ngày 29 tháng 3.png" alt="ảnh mô tả" class="img-tincapnhat">
+                        <div class="tincapnhat-time">
+                            <p> Th 3, 2024</p>
+                            <h4> 29 </h4>
+                        </div>
+                        <div class="tincapnhat-content">
+                            <p> Một không khí luyện tập hăng say của buổi sáng tập tổ (section rehearsal) đầu tiên cùng các giảng viên hướng dẫn giàu kinh nghiệm của Dàn nhạc giao hưởng Trẻ Thế giới và 25 thành viên của Dàn nhạc giao hưởng Trẻ HVÂNQGVN (VNAMYO).</p>
+                        </div>
+                        </div>
+                        <!-- Mục 4 -->
+                        <div class="tincapnhat-detail">
+                            <img src="ảnh/ngày 15 tháng 3.png" alt="ảnh mô tả" class="img-tincapnhat">
+                            <div class="tincapnhat-time">
+                                <p> Th 3, 2024</p>
+                                  <h4> 15 </h4>
+                            </div>
+                            <div class="tincapnhat-content">
+                                <p> Chúc mừng Khoa Âm nhạc truyền thống & Dàn nhạc Dân tộc Việt Nam HVÂNQGVN đã có đêm diễn thành công Chương trình nghệ thuật "Suối đàn T'rưng" tại thành phố Pleiku</p>
+                            </div>
+                            </div>
+                            <!-- Mục 5 -->
+                            <div class="tincapnhat-detail">
+                                <img src="ảnh/ngày 12 tháng 3.png" alt="ảnh mô tả" class="img-tincapnhat">
+                                <div class="tincapnhat-time">
+                                    <p> Th 3, 2024</p>
+                                    <h4> 12 </h4>
+                                </div>
+                                <div class="tincapnhat-content">
+                                    <p> Các buổi tập luyện của Dàn nhạc giao hưởng Trẻ Thế giới WYO tại Học viện Âm nhạc Quốc gia Việt Nam sẽ được MỞ CỬA TỰ DO để các khán giả yêu nhạc hàn lâm và các học sinh, sinh viên của HVÂNQGVN và các Trường Đại học có thể đến xem và theo dõi.</p>
+                                </div>
+                                </div>
+                                <!-- Mục 6 -->
+                                <div class="tincapnhat-detail">
+                                    <img src="ảnh/ngày 5 tháng 3.png" alt="ảnh mô tả" class="img-tincapnhat">
+                                    <div class="tincapnhat-time">
+                                        <p> Th 3, 2024</p>
+                                        <h4> 5 </h4>
+                                    </div>
+                                    <div class="tincapnhat-content">
+                                        <p> Nhạc trưởng Đồng Quang Vinh cùng các giảng viên, nghệ sĩ độc tấu tài năng Trần Khánh Quang, Vũ Ngọc Linh, Nguyễn Thiện Minh, Nhóm Tre nứa "Sức Sống Mới" cùng Dàn nhạc giao hưởng Hà Nội tích cực tập luyện cho Chương trình Hoà nhạc khai mạc mùa diễn "Mùa Xuân Hữu Nghị" vào lúc 20h00 tối ngày 3. 03 tại Phòng hoà nhạc Lớn Học viện.</p>
+                                    </div>
+                                    </div>
+                                    <!-- Mục 7 -->
+                                    <div class="tincapnhat-detail">
+                                        <img src="ảnh/ngày 27 tháng 2.png" alt="ảnh mô tả" class="img-tincapnhat">
+                                        <div class="tincapnhat-time">
+                                            <p> Th 2, 2024</p>
+                                            <h4> 27 </h4>
+                                        </div>
+                                        <div class="tincapnhat-content">
+                                            <p> Đêm Hoà nhạc đỉnh cao "Joint Concert" VNAM & VNSO cùng nghệ sĩ độc tấu violon tài danh NSND. GS. Aiman Musakhajaeva & nhạc trưởng Honna Tetsuji đã để lại nhiều ấn tượng tốt đẹp, khó quên và tràn đầy năng lượng tích cực đến các khán thính giả yêu nhạc cổ điển của buổi tối ngày 14 tháng 12 tại PHN Lớn HVANQGVN.</p>
+                                        </div>
+                                        </div>
+                                        <!-- Mục 8 -->
+                                        <div class="tincapnhat-detail">
+                                            <img src="ảnh/ngày 12 tháng 2.png" alt="ảnh mô tả" class="img-tincapnhat">
+                                            <div class="tincapnhat-time">
+                                                <p> Th 2, 2024</p>
+                                                <h4> 12 </h4>
+                                            </div>
+                                            <div class="tincapnhat-content">
+                                                <p> <p> Đêm nhạc Piano nhân kỷ niệm 150 năm ngày sinh nhạc sỹ vĩ đại người Nga SERGEY RACHMANINOV trình diễn bởi hai nghệ sĩ, giảng viên uy tín lâu năm của Khoa Piano Nguyễn Trinh Hương & Trần Thái Linh.
+                                            </div>
+                                            </div>
             </div>
-            <!-- Mục 3 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 29 tháng 3.png" alt="">
-                </div>
-                <div class="tintuc-time">
-                    <p> Th 3, 2024</p>
-                     <h4> 29 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Một không khí luyện tập hăng say của buổi sáng tập tổ (section rehearsal) đầu tiên cùng các giảng viên hướng dẫn giàu kinh nghiệm của Dàn nhạc giao hưởng Trẻ Thế giới và 25 thành viên của Dàn nhạc giao hưởng Trẻ HVÂNQGVN (VNAMYO).</p>
-                </div>
-            </div>
-            <!-- Mục 4 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 15 tháng 3.png" alt="">
-                </div>
-                <div class="tintuc-time">
-                    <p> Th 3, 2024</p>
-                     <h4> 15 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Chúc mừng Khoa Âm nhạc truyền thống & Dàn nhạc Dân tộc Việt Nam HVÂNQGVN đã có đêm diễn thành công Chương trình nghệ thuật "Suối đàn T'rưng" tại thành phố Pleiku</p>
-                </div>
-            </div>
-            <!-- Mục 5 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 12 tháng 3.png" alt="">
-                </div>
-                <div class="tintuc-time">
-                    <p> Th 3, 2024</p>
-                     <h4> 12 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Các buổi tập luyện của Dàn nhạc giao hưởng Trẻ Thế giới WYO tại Học viện Âm nhạc Quốc gia Việt Nam sẽ được MỞ CỬA TỰ DO để các khán giả yêu nhạc hàn lâm và các học sinh, sinh viên của HVÂNQGVN và các Trường Đại học có thể đến xem và theo dõi.</p>
-                </div>
-            </div>
-            <!-- Mục 6 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 5 tháng 3.png" alt="">
-                </div>
-                <div class="tintuc-time">
-                    <p> Th 3, 2024</p>
-                     <h4> 5 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Nhạc trưởng Đồng Quang Vinh cùng các giảng viên, nghệ sĩ độc tấu tài năng Trần Khánh Quang, Vũ Ngọc Linh, Nguyễn Thiện Minh, Nhóm Tre nứa "Sức Sống Mới" cùng Dàn nhạc giao hưởng Hà Nội tích cực tập luyện cho Chương trình Hoà nhạc khai mạc mùa diễn "Mùa Xuân Hữu Nghị" vào lúc 20h00 tối ngày 3. 03 tại Phòng hoà nhạc Lớn Học viện.</p>
-                </div>
-            </div>
-            <!-- Mục 7 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 27 tháng 2.png" alt="">
-                </div>
-                <div class="tintuc-time">
-                    <p> Th 2, 2024</p>
-                     <h4> 27 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Đêm Hoà nhạc đỉnh cao "Joint Concert" VNAM & VNSO cùng nghệ sĩ độc tấu violon tài danh NSND. GS. Aiman Musakhajaeva & nhạc trưởng Honna Tetsuji đã để lại nhiều ấn tượng tốt đẹp, khó quên và tràn đầy năng lượng tích cực đến các khán thính giả yêu nhạc cổ điển của buổi tối ngày 14 tháng 12 tại PHN Lớn HVANQGVN.</p>
-                </div>
-            </div>
-            <!-- Mục 8 -->
-            <div class="tintuc-item">
-                <div class="tintuc-header">
-                    <img src="ảnh/ngày 12 tháng 2.png" alt="">
-                </div>
-                <div class="tintuc-time">
-                    <p> Th 2, 2024</p>
-                     <h4> 12 </h4>
-                </div>
-                <div class="tintuc-content">
-                    <p> Đêm nhạc Piano nhân kỷ niệm 150 năm ngày sinh nhạc sỹ vĩ đại người Nga SERGEY RACHMANINOV trình diễn bởi hai nghệ sĩ, giảng viên uy tín lâu năm của Khoa Piano Nguyễn Trinh Hương & Trần Thái Linh.</p>
-                </div>
-            </div>
-           </div>
            <div class="button">
             <button class="buttona"> <b> Đọc thêm</b>  </button>
             </div>
-        </div>
+        
+        
+            
             <!-- Sự kiện scroll -->
-            <div class="sukien">
+        <div class="sukien">
                 <div class="title"> 
                     <h2> <u> Sự kiện </u></h2>
                 </div>
@@ -291,15 +521,13 @@
                     <div class="item"><img src="ảnh/scr9.png" alt=""></div>
                    
                 </div>
-            </div>
+        </div>
             <!-- Kết nói VNAM -->
-            <div class="tienich">
+        <div class="tienich">
                 <div class="title"> 
                     <h2><u>Kết nối VNAM</u></h2>
                 </div>
-                <!-- Danh sách kết nối -->
                 <div class="ketnoi-list">
-                    <!-- Quản lý điện tử -->
                     <div class="ketnoi-item">
                         <div class="ketnoi-header">
                             <h3><b>Quản lý điện tử</b></h3>
@@ -308,7 +536,6 @@
                             <img src="ảnh/quản lý điện tử.svg" alt="">
                         </div>
                     </div>
-                    <!-- Thư điện tử -->
                     <div class="ketnoi-item">
                         <div class="ketnoi-header">
                             <h3><b>Thư điện tử</b></h3>
@@ -317,7 +544,6 @@
                             <img src="ảnh/thư điện tử.svg" alt="">
                         </div>
                     </div>
-                    <!-- Học bạ điện tử -->
                     <div class="ketnoi-item">
                         <div class="ketnoi-header">
                             <h3><b>Học bạ điện tử</b></h3>
@@ -327,38 +553,95 @@
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
             <!-- Banner bên dưới  -->
-            <div class="banner-duoi">
-                <div class="banner-anh"> 
-                    <img src="ảnh/lịch công tác.png" alt="">
-                </div>
-              
-            </div>    
+            <div class="fill-operations">
+                <b class="qung-co">Quảng cáo</b>
+                <section class="timer-trigger">
+                  <img
+                    class="parallel-processor-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-49@2x.png"
+                  />
+          
+                  <img
+                    class="parallel-processor-icon1"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-46@2x.png"
+                  />
+          
+                  <img
+                    class="parallel-processor-icon2"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-44@2x.png"
+                  />
+          
+                  <img
+                    class="parallel-processor-icon3"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-45@2x.png"
+                  />
+          
+                  <img
+                    class="parallel-processor-icon4"
+                    loading="lazy"
+                    alt=""
+                    src="./public/rectangle-47@2x.png"
+                  />
+                    <img
+                      class="stack-memory-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./public/rectangle-48@2x.png"
+                    />
+              </div>
+            </section>
+          </div>
    </main>
    <!-- footer -->
-   <footer class="footer">
-        <div class="row">
-            <div class="box-lon">
-            </div>
-            <div class="box1">
-                <img src="ảnh/logo-footer.png" alt="">
-            </div>
-            <div class="box2">
-                <h3> HỌC VIỆN ÂM NHẠC QUỐC GIA VIỆT NAM
-                </h3>
-                    <p>VIETNAM NATIONAL ACADEMY OF MUSIC</p>
-            </div>
-            <div class="box3">
-                    <b> <p>Bản quyền thuộc về Học viện âm nhạc quốc gia Việt Nam
-                    </p>
-                    <p>77 Hào Nam, Đống Đa, Hà Nội</p>
-                    <p>ĐT: +844 3851 4969 / 3856 1842 - Fax: +844 3851 3545</p>
-                    <p>Website: www.vnam.edu.vn - Email: hvan@vnam.edu.vn</p></b>
-                    
-            </div>
-        </div>
- </footer>
+   <footer class="footer1">
+        <div class="footer-child"></div>
+        <img
+        class="logo-hoc-vien-am-nhac-quoc-gia-icon8"
+        loading="lazy"
+        alt=""
+        src="./public/logohocvienamnhacquocgiavietnamvnam-2@2x.png"
+        />
 
+        <div class="geometry-handler">
+        <div class="connection-manager">
+            <div class="hc-vin-m-container">
+            <p class="hc-vin-m">HỌC VIỆN ÂM NHẠC QUỐC GIA VIỆT NAM</p>
+            <p class="vietnam-national-academy">
+                VIETNAM NATIONAL ACADEMY OF MUSIC
+            </p>
+            </div>
+            <!-- <div class="output-dispatcher">
+            <div class="condition-checker">
+                <div class="loop-controller"></div>
+            </div>
+            <div class="branch-splitter"></div>
+            </div> -->
+        </div>
+        </div>
+        <div class="merge-combiner">
+        <b class="bn-quyn-thuc-container">
+            <p class="bn-quyn-thuc">
+            Bản quyền thuộc về Học viện âm nhạc quốc gia Việt Nam
+            </p>
+            <p class="ho-nam-ng">77 Hào Nam, Đống Đa, Hà Nội</p>
+            <p class="t-844-3851">
+            ĐT: +844 3851 4969 / 3856 1842 - Fax: +844 3851 3545
+            </p>
+            <p class="website-wwwvnameduvn-">
+            Website: www.vnam.edu.vn - Email: hvan@vnam.edu.vn
+            </p>
+        </b>
+        </div>
+    </footer>
    </body>
 </html>

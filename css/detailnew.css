@@ -1,0 +1,216 @@
+
+/* Phần main */
+.title{
+  padding-top: 340px;
+}
+.titledate {
+    display: flex;
+    height: auto;
+}
+.title  h2{
+    margin-bottom: 0px;
+    padding-left: 50px;
+    color: rgba(0, 42, 72, 1);
+    font-family: roboto ;
+    width: 700px;
+    margin-top: 400px;
+}
+.box  img{
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 50px;
+}
+/* Phần content thư ngỏ */
+.content{
+    display: flex;
+    font-family: roboto ;
+    padding-right: 50px;
+}
+.content  .contentnews{
+    width: 60%;
+    height: 100%;
+   
+}
+.content  .contentnews img{
+    width: 100%;
+} 
+/* Phần cho lịch  */
+.content  .calendar-chung{
+    padding-top: 10px;
+    height: 500px;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 120px;
+
+}
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Calendar */
+  .calendar{
+    width: 435px;
+    height: 520px;
+    background: white;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5),
+                -10px -10px 20px rgba(0,0,0,0.25);
+  }
+  .calendar .month{
+    width: 95.4%;
+    height: 20%;
+    padding: 10px 10px;
+    background: #ff9a8b;
+    background-image: linear-gradient(
+      90deg,
+      #8bf0ff 0%,
+      #1595e4 55%,
+      #bbf1f7 100%
+    );
+    justify-content: space-between !important;
+    text-align: center;
+  }
+  .calendar .month img{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  .month img:hover{
+    opacity: 0.8;
+  }
+  .month h1{
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .month p{
+    font-weight: 300;
+    color: rgba(0,0,0,0.6)
+  }
+  
+  .weekdays{
+    width: 100%;
+    padding: 10px;
+    height: 10%;
+    padding: 0;
+  }
+  .weekdays div{
+    width: calc(430px / 7);
+    height: 80%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: 0.2s;
+  }
+  .days{
+    width: 100%;
+    height: 60%;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 10px;
+    padding-top: 0;
+  }
+  .days div{
+    width: calc(400px / 7);
+    height: calc(400px / 7);
+    text-align: center;
+    font-size: 13.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+  }
+  .days .previous-days,
+  .days .next-days{
+    color: rgba(0,0,0,0.3)
+  }
+  .days .today{
+    background: #24edff;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  .days .today:hover{
+    background: #2cd3df;
+  }
+  .days div:not(.today):hover{
+    border-radius: 0;
+    border: 0.5px solid black;
+    background: rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next{
+    cursor: pointer;
+  }
+/* Phần tin tức bên dưới lịch  */
+.content  .listnews{
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  
+}
+
+/* Phần listnew trong mục tin dưới lịch*/
+.phai{
+    width: 650px;
+
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 42, 72, 1); 
+    padding-left: 10px;
+    margin-top: 2px;
+    padding-bottom: 4px;
+}
+.phai  .phai-left{
+    width: 125px;
+    margin-right: 10px;
+}
+.phai  .phai-right{
+    width: 600px;
+}
+.phai  .img{
+    width: 100%;
+}
+/* Phần tin tức khác */
+.tintuckhac  .title-news{
+  margin-bottom: 0px;
+  padding-left: 50px;
+  color: rgba(0, 42, 72, 1);
+  font-family: roboto ;
+  width: 700px;
+  
+
+}
+.tintuckhac  .box-tintuckhac{
+  padding-left: 50px;
+  color: rgba(0, 42, 72, 1);
+  font-family: roboto ;
+  margin-right: 5px;
+  width: 70%;
+}
+.tintuckhac  hr{
+  border: none; /* Loại bỏ border mặc định của thẻ hr */
+  border-top: 1px dashed rgba(0, 42, 72, 1); /* Thiết lập border top là nét đứt */
+}
+.tintuckhac  .date-tintuckhac{
+  color: rgb(161, 159, 159);
+}
+.contentlistnews {
+  padding-top: 30px;
+}
+.listnews-title{
+  padding-top: 70px;
+}
+.box-tintuckhac,
+.title-news {
+  padding-bottom: 10px;
+}
+h5 {
+  margin-top: 20px;
+  font-size: 15px;
+}

@@ -1,0 +1,258 @@
+body{
+    font-family:  "Plus Jakarta Sans", sans-serif;
+}
+/* Phần chuyển trang  */
+@keyframes transitionIN{
+  from{
+    opacity: 0;
+    transform: rotate(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+.main{
+  animation: transitionIn 0.75s;
+}
+.video{
+    background-color: rgba(217, 217, 217, 1);
+    text-align: center;
+    height: 350px;
+    font-size: 40px;
+    align-content: center;
+}
+.menu-main_chung{
+    align-items: center;
+    background-color: rgba(255, 236, 188, 1);
+    border: 20px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+    padding: 20px;
+    width: 60%; /* Đặt chiều rộng của div */
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+   
+}
+/* Hiệu ứng hover cho .menu-main_chung */
+.menu-main_chung:hover {
+  background-color: rgba(255, 236, 188, 0.8); /* Thay đổi màu nền khi hover */
+  transform: scale(1.05); /* Phóng to phần tử khi hover */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển động mềm mại */
+}
+
+/* Hiệu ứng hover cho .box-member */
+.box-member:hover {
+  transform: translateY(-10px); /* Dịch chuyển phần tử lên trên khi hover */
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px ; /* Đổ bóng mờ khi hover */
+  transition: all 0.3s ease; /* Hiệu ứng chuyển động mềm mại */
+}
+.title-menu{
+  text-align: center;
+  color: rgba(0, 42, 72, 1);
+  font-size: 30px;
+  
+}
+ 
+/* Hiệu ứng hover cho hình ảnh */
+.khoa img {
+  transition: transform 0.3s ease; /* Chuyển đổi transform trong 0.3 giây với hiệu ứng mềm mại */
+}
+
+.khoa img:hover {
+  transform: scale(1.1); /* Phóng to hình ảnh lên 110% khi hover */
+}
+
+/* Hiệu ứng hover cho */
+.khoa.img:hover {
+  color: rgba(13, 12, 7, 1); /* Thay đổi màu nền khi hover */
+  transform:scale(1.1);  /* Phóng to phần tử khi hover */
+  transition: 0.5 all; /* Hiệu ứng chuyển động mềm mại */
+    font-weight: normal; /* Trọng số chữ mặc định */
+    font-size: 16px; /* Kích thước chữ mặc định */
+  }
+  
+/* Hiệu ứng hover cho . */
+.title-khoa:hover h1{
+  transform: translateY(-10px); /* Dịch chuyển phần tử lên trên khi hover */
+  text-shadow: rgba(254, 254, 254, 0.4) 0px 7px 29px 0px ; /* Đổ bóng mờ khi hover */
+  transition: all 0.3s ease;
+  font-weight: bold; /* Trọng số chữ khi di chuột qua */
+    font-size: 40px; /* Kích thước chữ khi di chuột qua */
+   /* Hiệu ứng chuyển động mềm mại */
+}
+.menu-main{
+  display: flex;
+  font-size: 20px;
+}
+.no-gachdaudong{
+    list-style-type: none;
+}
+.menu-detail{
+ 
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước tổng của menu-detail */
+    width: 600px;
+
+}
+/* Phần main */
+.khoa {
+    position:relative;
+    display: inline-block; /* Đảm bảo phần tử chiếm đúng không gian của hình ảnh */
+    margin-top: 30px;
+    margin-left: 70px;
+
+  }
+
+  
+.title-khoa {
+    position: absolute;
+    top: 40%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 20px;
+    color: white; /* Màu chữ */
+  
+
+  }
+  /* About -khoa */
+  .about-khoa_chung{
+    background-color: rgba(0, 42, 72, 1);
+    color: white;
+    align-content: center;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: 30px;
+    
+    
+  }
+  .about-khoa{
+    display: flex;
+    gap: 30px;
+    height: 40%;
+  }
+  .box-about:first-child{
+    width: 600px;
+    padding: 30px;
+    font-size: 25px;
+    padding-left: 130px;
+    
+  }
+  .box-about:last-child{
+    width: 400px;
+    padding: 10px;
+    margin-top: 25px;
+  }
+  .box-about img{
+    width: 100%;
+  }
+  .box-duoi{
+    font-size: 25px;
+    width: 75%;
+    align-items: center;
+    margin-left: 130px;
+    margin-bottom: 30px;
+ 
+    
+  }
+  /* info */
+  .info-khoa{
+    align-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    font-size: 28px;
+    margin: 0 auto;
+    color: rgba(0, 42, 72, 1);
+    ;
+ 
+
+  }
+  /* about-khoa 2 */
+  .about-khoa2{
+    background-color: rgba(0, 42, 72, 1);
+    color: white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 30px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+   
+  }
+  .box-about2:first-child{
+    width: 604px;
+    height: 399px;
+    padding: 20px;
+    margin-left: 90px;
+    
+    
+  }
+  .box-about2:last-child{
+    width: 606px;
+    height: 421px;
+    padding: 30px;
+    font-size: 30px;
+    text-align: right;
+   margin-top: 50px;
+  }
+  /* Member */
+  .member-khoa{
+    margin-top: 50px;
+  }
+  .main-member{
+   text-align: center;
+
+  }
+  .list-member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+   
+  }
+  .box-member{
+    border-radius: 30px;
+    border: 1px solid  rgba(0, 0, 0, 0.25);
+    ;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 40%;
+    height: 900px;
+  }
+  .titlelist{
+    margin: 40px;
+    font-size: 20px;
+    
+  }
+  .title-member{
+    border-radius: 50px;
+    overflow: hidden;
+    background-color:  rgba(150, 171, 225, 0.77);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 15px;
+  }
+  a {
+    color: black;
+    font-weight: normal; /* Trọng số chữ mặc định */
+    font-size: 16px; /* Kích thước chữ mặc định */
+    transition: all 0.3s; /* Hiệu ứng chuyển đổi tất cả thuộc tính */
+  }
+  
+  a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold; /* Trọng số chữ khi di chuột qua */
+    font-size: 22px; /* Kích thước chữ khi di chuột qua */
+  }
+  
