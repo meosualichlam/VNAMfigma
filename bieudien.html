@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bieudien.css">
+    <link rel="stylesheet" type="text/css" href="./css/datve.css">
+    <link rel="icon" type="image/x-icon" href="./public/logo.jpeg">
+    <title>Biểu diễn</title>
+</head>
+<body>
+    
+<div class="khoidau">
+
+    <div class="khoitb">
+        <div class="chu">
+            <h1> THÔNG BÁO BIỂU DIỄN</h1>
+        </div>
+        <div class="xemtatca">
+            <button class="xemtatca1" type="button">
+                Xem tất cả
+            </button>
+        </div>    
+    </div>
+
+    <div class="khoibieudien">
+        <div class="bieudien bieudien1">
+            <div class="hinhanh1">
+                <a href="">
+                    <img src="/anh1.png" alt="" class="hinhanh hinhanh1">
+                    <p class="tieude">Hoà nhạc<br> "From Baroque to Romantic"
+                        <br> 26/03/2022
+                    </p>
+            </div>
+
+            <div class="datvengay">
+                <button class="datvengay1" type="button">
+                    <a href="#click" style="color:#ffffff">
+                    ĐẶT VÉ NGAY
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="bieudien bieudien2">
+            <div class="hinhanh2">
+                <a href="">
+                    <img src="/anh2.png" alt="" class="hinhanh hinhanh1">
+                    <p class="tieude">Hoà nhạc Opening Concert Dàn nhạc Giao hưởng Trẻ VNAMYO
+                        <br>
+                        08/05/2022</p>
+            </div>
+
+            <div class="datvengay">
+                <button class="datvengay1" type="button">
+                    <a href="#click" style="color:#ffffff">
+                        ĐẶT VÉ NGAY
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="bieudien bieudien3">
+            <div class="hinhanh3">
+                <a href="">
+                    <img src="/anh3.png" alt="" class="hinhanh hinhanh1">
+                    <p class="tieude">Chương trình hoà nhạc toàn bộ các Concerto của L.V.Beethoven
+            </div>
+
+            <div class="datvengay">
+                <button class="datvengay1" type="button">
+                    <a href="#click" style="color:#ffffff">
+                        ĐẶT VÉ NGAY
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<a href=""></a>
+
+    <div class="khungto" id="click">
+        <form action="" id="form-datve"> 
+
+            <div class="tentruong" style="color: #ffffff; font-family: Arial; font-size: 22px;
+                font-style: normal; font-weight: 700; line-height: normal;">
+                ĐẶT VÉ
+            </div>
+            
+            <div class="khoinhap" style="display: flex" >
+                <div class="hoten macdinh" >
+                    <p>
+                        Tên<span style="color: red;">*</span>: 
+                    </p>
+                </div>
+                <div class="nhapdulieu">
+                    <input type="text" class="nhap nhapten" title="Vui lòng nhập họ và tên" 
+                    placeholder="Hãy nhập họ và tên" name="txtTaiKhoan" id="taikhoan" required>
+                </div>
+            </div>
+            
+            <div class="khoinhap" style="display: flex">
+                <div class="sodienthoai macdinh">
+                    <p>
+                        Số điện thoại<span style="color: red;">*</span>: 
+                    </p>
+                </div>
+                <div class="nhapdulieu">
+                    <input type="number" class="nhap nhapsdt" title="Vui lòng nhập số điện thoại" 
+                    placeholder="Hãy nhập số điện thoại" name="sdt" id="sodienthoai" required>
+                </div>
+            </div>
+
+            <div class="khoinhap" style="display: flex">
+                <div class="email macdinh">
+                    <p>
+                        Email<span style="color: red;">*</span>: 
+                    </p>
+                </div>
+                <div class="nhapdulieu">
+                    <input type="email" class="nhap email" title="Vui lòng nhập email" 
+                    placeholder="Hãy nhập email" name="email" id="email" required>
+                </div>
+            </div>
+
+            <div class="khoinhap" style="display: flex">
+                <div class="sukien macdinh">
+                    <p>
+                        Sự kiện<span style="color: red;">*</span>: 
+                    </p>
+                </div>
+                <div class="nhapdulieu">
+                    <input type="text" class="nhap nhapsk" title="Vui lòng nhập sự kiện" 
+                    placeholder="Hãy nhập sự kiện" name="sukien" id="sukien" required>
+                </div>
+            </div>
+
+            <div class="khoinhapsl" style="display: flex">
+                <div class="soluongve macdinh">
+                    <p>
+                        Số lượng vé<span style="color: red;">*</span>: 
+                    </p>
+                </div>
+                <div class="sove">
+                    <button class="sove1" type=”button”> 1
+                    </button>
+                </div>
+                <div class="sove">
+                    <button class="sove1" type=”button”> 2
+                    </button>
+                </div>
+                <div class="sove">
+                    <button class="sove1" type=”button”> 3
+                    </button>
+                </div>
+                <div class="sove">
+                    <button class="sove1" type=”button” onclick="myFunction()" id="chuyen"> Thêm
+                    </button>
+                </div>
+            </div>
+
+            <div class="khoinhap" style="display: flex">
+                <div class="pttt macdinh">
+                    <p>
+                        Phương thức thanh toán<span style="color: red;">*</span>: 
+                    </p>
+                </div>
+                <div class="nhapdulieu">
+                    <input type="text" class="nhap nhappt" title="Vui lòng nhập phương thức thanh toán" 
+                    placeholder="Hãy nhập phương thức thanh toán" name="pttt" id="pttt" required>
+                </div>
+            </div>
+
+            <div class="xacnhan">
+                <button onclick="return checkform()" class="xacnhan1"> XÁC NHẬN THANH TOÁN </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="khoianhbieudien">
+        <h1 class="chuanhbieudien">ẢNH BIỂU DIỄN</h1>
+        <div class="anhbieudien">
+            <img src="anh4.png" alt="" class="anhbieudien1">
+        </div>
+    </div>
+    
+    <!-- Quảng cáo-->
+    <div class="fill-operations">
+        <b class="qung-co">Quảng cáo</b>
+        <section class="timer-trigger">
+          <img
+            class="parallel-processor-icon"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-49@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon1"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-46@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon2"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-44@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon3"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-45@2x.png"
+          />
+  
+          <img
+            class="parallel-processor-icon4"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-47@2x.png"
+          />
+
+        </section>
+      </div>
+</body>
+</html>

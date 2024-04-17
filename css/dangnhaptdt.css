@@ -17,18 +17,16 @@ body{
     padding: 30px 30px 40px;
     box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-
 }
+
 .logo{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 6px;
 }
 
 .tentruong{
     text-align: center;
-}
-.hoten{
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .nhap{
@@ -45,8 +43,6 @@ body{
 
 }
 
-
-
 .nhapcaicon{
     max-width: 400px;
     height: 34px;
@@ -54,29 +50,22 @@ body{
     border: solid 1.5px;
     border-color: rgba(192, 186, 186, 0.5);
     border-radius: 5px;
-    margin-top: -10px;
-}
-
-.vidu{
-    font-size: small;
-    margin-top: -6px;
+    margin-top: 10px;
 }
 
 .ghinho{
-    margin-top: -16px;
-    font-size: 15px;    
-    align-content: center;
-
-}
-
-.hotline{
-    text-align: center;
+    margin-top: 5px;
     font-size: 13px;
+    align-content: center;
 }
+
 
 .dangnhap{
+    margin-top: 10px;
     text-align: center;
+    margin-bottom: center;
 }
+
 .dangnhap1{
     text-align: center;
     background-color: #016AB4;

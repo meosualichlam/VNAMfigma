@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Đăng nhập </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/img/logo.jpeg">
+        <link rel="stylesheet" type="text/css" href="/css/dangnhapdt.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+ 
+    <body>
+        <div class="khungto">
+        <form action="" id="form-dangnhap"> 
+            <div class="logo">
+                <img src="/img/logo.jpeg" width="90px"; height="auto";>
+            </div>
+
+            <div class="tentruong" style="color: #000000; font-family: Plus Jakarta Sans; font-size: 22px;
+                font-style: normal; font-weight: 700; line-height: normal;">
+                VNAM - QUẢN LÝ ĐÀO TẠO
+            </div>
+
+            <div class="hoten">
+                    <p>
+                        Mã người dùng <span style="color: red;">*</span>
+                    </p>
+            </div>
+            <div class="nhapcaicon">
+                <i class="fas fa-user" style="margin-left: 9px; margin-top: 9px;"></i>
+                <input type="text" class="nhap" title="Vui lòng nhập mã người dùng" 
+                placeholder="Mã người dùng" name="txtTaiKhoan" id="nguoidung" required>
+            </div>
+
+            <div class="matkhau">
+                <p>
+                    Mật khẩu <span style="color: red;">*</span>
+                </p>
+            </div>
+            <div class="nhapcaicon">
+                <i class="fas fa-key" style="margin-left: 9px; margin-top: 9px;"></i>
+                <input type="password" class="nhap" title="Vui lòng nhập mật khẩu" 
+                placeholder="Mật khẩu" name="txtNgaySinh" id="matkhau" required max="99999999">
+            </div>
+
+            <div class="ghinho" style="display: flex;">
+                <input type="checkbox">
+                <p>Remember username </p> 
+            </div>
+ 
+            
+            <div class="dangnhap">
+                <button onclick="return checkform()" class="dangnhap1"> Đăng nhập </button>
+            </div>
+        </form>
+        </div>
+
+        <script>
+            function checkform(){
+                var user = document.getElementById("nguoidung");
+                var pass = document.getElementById("matkhau");
+                if(user.value!=""){
+                
+                }else{
+                    alert("Vui lòng nhập mã người dùng");
+                    user.focus();
+                    return false;
+                }
+
+                if(pass.value!=""){
+                
+                }else{
+                    alert("Vui lòng nhập mật khẩu");
+                    user.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

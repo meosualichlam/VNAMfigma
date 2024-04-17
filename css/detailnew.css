@@ -23,8 +23,9 @@
 /* Phần content thư ngỏ */
 .content{
     display: flex;
+    flex-direction: row;
     font-family: roboto ;
-    padding-right: 50px;
+    padding: 30px;
 }
 .content  .contentnews{
     width: 60%;

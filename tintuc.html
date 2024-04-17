@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./css/tintuc.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <style>
     body{
@@ -19,14 +19,11 @@
         flex-direction: column;
         min-height: 100vh;
     }
-    /* .main{
-        flex-grow: 1;
-    } */
     .cu-chuyn-group {
         flex-grow: 1;
     }
     .shape-container1{
-        height: 78vh;
+        min-height: 80vh;
         width: 100%;
     }
     footer {
@@ -35,16 +32,17 @@
         left: 0;
     }
     .fill-operations {
-      padding-left: 198px;
-      padding-top: 30px;
-      padding-bottom: 200px;
+      padding-left: 90px;
+      padding-top: 50px;
+      padding-bottom: 240px;
     }
     .content {
-      padding-bottom: 50px;
+      padding-bottom: 90px;
     }
 </style>
 <body>
    <!--Header-->
+   <header>
      <section class="cu-chuyn-group">
         <div class="cu-chuyn2">
           <header class="cu-chuyn-child">
@@ -109,19 +107,19 @@
                 <div class="mega-box1">
                   <div class="content">
                       <div class="row">
-                          <header>TIN TỨC VNAM</header>
-                          <ul class="mega-links">
-                              <li><a href="">Tin tức nổi bật</a></li>
-                              <li><a href="">Tin ảnh</a></li>
-                          </ul>
-                      </div>
+                        <header>TIN TỨC VNAM</header>
+                        <ul class="mega-links">
+                            <li><a href="">Tin tức nổi bật</a></li>
+                            <li><a href="">Tin ảnh</a></li>
+                        </ul>
+                    </div>
                       <div class="row">
-                          <header>CÂU CHUYỆN</header>
-                          <ul class="mega-links">
-                              <li><a href="">Giảng viên</a></li>
-                              <li><a href="">Sinh viên</a></li>
-                              <li><a href="">Hợp tác quốc tế</a></li>
-                          </ul>
+                        <header>CÂU CHUYỆN</header>
+                        <ul class="mega-links">
+                            <li><a href="">Giảng viên</a></li>
+                            <li><a href="">Sinh viên</a></li>
+                            <li><a href="">Hợp tác quốc tế</a></li>
+                        </ul>
                       </div>
                   </div>
               </div></div>
@@ -261,26 +259,28 @@
                   </div>
                 
       </section>
+      <nav class="context-navigation">
+        <div class="context-navigation-container">
+            <div class="context-list">
+                <div class="context__item">
+                    <a
+                      class="context-navigation-item-link"
+                      href="/HTML/Home.html"
+                      >Trang chủ</a>
+                  </div>
+                 /
+                  <div class="context__item">
+                    <a
+                      class="context-navigation-item-link"
+                      href="AboutTS.html"
+                      >Tin tức</a>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    </header>
    <main class="content"> 
-            <nav class="context-navigation">
-                <div class="context-navigation-container">
-                    <div class="context-list">
-                        <div class="context__item">
-                            <a
-                              class="context-navigation-item-link"
-                              href="/HTML/Home.html"
-                              >Trang chủ</a>
-                          </div>
-                         /
-                          <div class="context__item">
-                            <a
-                              class="context-navigation-item-link"
-                              href="AboutTS.html"
-                              >Tin tức</a>
-                          </div>
-                    </div>
-                </div>
-            </nav>
+        
             <div class="tintuchd-title">
                 <h2> <u> Tin tức hoạt động </u> </h2>
             </div>
@@ -302,7 +302,7 @@
                                 <img src="ảnh/ct rạng đông.png" alt="">
                             </div>
                             <div class="phai-right">
-                                    <h3> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</h3>
+                                    <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
                             </div> 
                         </div>
                         <!-- Mục 2 -->
@@ -312,7 +312,7 @@
                             </div>
                             <div class="phai-right">
                                    
-                                <h3> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</h3>
+                                <p> Chương trình hòa nhạc đặc biệt "Rạng Đông" của Dàn nhạc Dân tộc Việt Nam.</p>
                             </div> 
                         </div>
                         <!-- Mục 3 -->
@@ -591,6 +591,7 @@
             </section>
           </div>
    </main>
+
    <!-- footer -->
    <footer class="footer1">
         <div class="footer-child"></div>
