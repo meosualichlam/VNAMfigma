@@ -2601,7 +2601,7 @@ footer {
   position: relative;
   height: 40px;
   width: 800px;
-  margin-top: -10px ;
+  margin-top: 0 ;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -2642,6 +2642,9 @@ footer {
   .tintuchd-title {
       padding-top: 800px;
   }
+  .content {
+    padding-bottom:  500px;
+ }
 }
 @media only screen and (max-width: 1021px) and (min-width: 693px) {
   .context-navigation {
@@ -2650,8 +2653,9 @@ footer {
   .tintuchd-title {
       padding-top: 600px;
   }
-  
-
+  .content {
+    padding-bottom:  260px;
+ }
 }
 @media only screen and (max-width: 692px) {
   .context-navigation {
@@ -2661,6 +2665,6 @@ footer {
        padding-top: 550px;
    }
    .content {
-      padding-bottom:  200px;
+      padding-bottom:  300px;
    }
 }
